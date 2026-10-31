@@ -118,7 +118,7 @@
   <section class="band alt" id="observatorio">
     <div class="wrap">
       <div class="shead" style="margin-bottom:6px"><span class="eyebrow">Observatorio</span><h2>Observatorio de movilidad</h2>
-        <p>Primero, el panorama de los países de la red con datos de la UNESCO. Debajo, el micro-observatorio UASD con datos provisionales.</p></div>
+        <p>Primero, el panorama de los países de la red con datos de la UNESCO. Después, la UASD en cifras con sus estadísticas oficiales. Al final, el micro-observatorio de movilidad UASD con datos provisionales.</p></div>
 
       <section class="sectionhead" id="panorama" aria-labelledby="panoT">
         <span class="real">Datos reales · UNESCO</span>
@@ -136,6 +136,44 @@
         </div>
       </section>
       <section class="fichas" id="fichas"></section>
+
+      <hr class="divider">
+      <section class="sectionhead" id="cifras" aria-labelledby="cifrasT">
+        <span class="real">Datos reales · UASD</span>
+        <h2 id="cifrasT">La UASD en cifras</h2>
+        <p class="intro">Las estadísticas oficiales de la UASD dan el contexto del micro-observatorio: cuántos estudiantes y docentes tiene cada facultad (la base para calcular tasas de movilidad) y cuántos estudiantes de otros países cursan aquí sus estudios completos, que es la movilidad entrante de titulación.</p>
+        <p class="lede" id="cifrasLede"></p>
+      </section>
+      <section class="kpis" id="cifrasKpis"></section>
+      <div class="grid2 cifras">
+        <section class="card">
+          <h2>Matrícula de grado, 2017–2025</h2>
+          <p class="sub">Estudiantes de grado y técnico superior matriculados cada año</p>
+          <div class="cols" id="cMat" role="img" aria-label="Matrícula de grado por año, 2017 a 2025"></div>
+          <div class="colx" id="cMatX"></div>
+          <p class="sub" id="cMatNota"></p>
+        </section>
+        <section class="card">
+          <h2>Estudiantes extranjeros, 2020–2025</h2>
+          <p class="sub">Estudiantes de grado con nacionalidad distinta de la dominicana</p>
+          <div class="cols" id="cExt" role="img" aria-label="Estudiantes extranjeros por año, 2020 a 2025"></div>
+          <div class="colx" id="cExtX"></div>
+          <h3 class="sub-h" style="font-size:15px;margin:10px 0 0">Por nacionalidad, 2025</h3>
+          <div class="hbars" id="cNac"></div>
+        </section>
+        <section class="card">
+          <h2>Matrícula por facultad, 2025</h2>
+          <div class="legend"><span><span class="dot" style="background:var(--t-cian)"></span>Mujeres</span><span><span class="dot" style="background:var(--hilo-amarillo)"></span>Hombres</span></div>
+          <div class="hbars" id="cFac"></div>
+          <p class="sub">El ciclo básico (Organismos Académicos Comunes) reúne a quienes aún no han pasado a su facultad.</p>
+        </section>
+        <section class="card">
+          <h2>Docentes por facultad, 2025</h2>
+          <p class="sub">Personal docente programado en el primer semestre de 2025</p>
+          <div class="hbars" id="cDoc"></div>
+        </section>
+      </div>
+      <p class="sub" id="cifrasFuente"></p>
 
       <hr class="divider">
       <section class="sectionhead">
@@ -226,5 +264,7 @@
 <script src="data/mundo.js"></script>
 <script src="js/portal.js"></script>
 <script src="js/observatorio.js"></script>
+<script src="data/uasd-cifras.js"></script>
+<script src="js/cifras.js"></script>
 </body>
 </html>

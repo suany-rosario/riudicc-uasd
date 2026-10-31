@@ -399,3 +399,11 @@ footer.site .logos{border-radius:16px}
 #logrosNota{margin-top:10px}
 .sectionhead .intro{margin:6px 0 0;max-width:72ch;font-size:15.5px;color:var(--ink);border-left:3px solid var(--hilo-cian);padding-left:14px}
 @media (max-width:860px){.riu{grid-template-columns:1fr;gap:24px}}
+
+/* La UASD en cifras */
+.grid2.cifras .hb{grid-template-columns:minmax(110px,44%) minmax(0,1fr) 58px}
+.grid2.cifras .hb .name{white-space:normal;line-height:1.25}
+.grid2.cifras .cols{height:170px}
+.grid2.cifras .colx{font-size:11px}
+#cifrasFuente a{color:var(--accent)}
+.grid2.cifras .card{align-content:start}
