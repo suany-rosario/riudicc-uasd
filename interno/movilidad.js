@@ -68,7 +68,7 @@
     const rows=filtered().sort((a,b)=>b.fecha.localeCompare(a.fecha)||a.id.localeCompare(b.id)); const T=$("mvBody"); T.textContent="";
     $("mvCount").textContent=`${rows.length} de ${ALL.length} movilidades`;
     rows.forEach(r=>{const tr=el("tr");
-      tr.append(el("td","mono",fecha(r.fecha)));
+      tr.append(el("td","mono",r.solo_anio?String(r.anio):fecha(r.fecha)));
       const s=el("td"); s.append(el("span","pill "+(r.sentido==="SALIENTE"?"out":"in"),r.sentido==="SALIENTE"?"Saliente":"Entrante")); tr.append(s);
       tr.append(el("td",null,r.perfil), el("td",null,r.facultad), el("td",null,r.pais+(r.ciudad?` · ${r.ciudad}`:"")));
       const i=el("td"); i.append(el("span",null,r.institucion)); if(r.nota) i.append(el("div","sub",r.nota)); tr.append(i);

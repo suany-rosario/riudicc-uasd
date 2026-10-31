@@ -31,7 +31,8 @@ window.MOVILIDADES = {
 "nota": "El rector viajó con acompañantes; su número no consta.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU002",
@@ -54,7 +55,8 @@ window.MOVILIDADES = {
 "nota": "Premio Excelencia Académica Rubén Darío; viajó con una delegación.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU003",
@@ -77,7 +79,8 @@ window.MOVILIDADES = {
 "nota": "Delegados estudiantiles al Consejo Universitario; número no consta.",
 "discapacidad": null,
 "grupo": true,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU004",
@@ -100,7 +103,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU005",
@@ -123,7 +127,8 @@ window.MOVILIDADES = {
 "nota": "Premio Excelencia Académica Rubén Darío.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU006",
@@ -146,7 +151,8 @@ window.MOVILIDADES = {
 "nota": "Maestría y doctorado en Química; licencias renovadas en 2021-142, 2022-020, 2023-052, 2023-277 y 2025-046.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU007",
@@ -169,7 +175,8 @@ window.MOVILIDADES = {
 "nota": "Comisión encabezada por la rectora; aprobada en marzo de 2020, su realización no consta.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU008",
@@ -192,7 +199,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU009",
@@ -215,7 +223,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU010",
@@ -238,7 +247,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU011",
@@ -261,7 +271,8 @@ window.MOVILIDADES = {
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU012",
@@ -284,7 +295,8 @@ window.MOVILIDADES = {
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU013",
@@ -307,7 +319,8 @@ window.MOVILIDADES = {
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU014",
@@ -330,7 +343,8 @@ window.MOVILIDADES = {
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU015",
@@ -353,7 +367,8 @@ window.MOVILIDADES = {
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU016",
@@ -376,7 +391,8 @@ window.MOVILIDADES = {
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU017",
@@ -399,7 +415,8 @@ window.MOVILIDADES = {
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU018",
@@ -422,7 +439,8 @@ window.MOVILIDADES = {
 "nota": "Especialización en Justicia Constitucional.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU019",
@@ -445,7 +463,8 @@ window.MOVILIDADES = {
 "nota": "Reconocimiento y vínculos con universidades; fecha del viaje no consta.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU020",
@@ -468,7 +487,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU021",
@@ -491,7 +511,8 @@ window.MOVILIDADES = {
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU022",
@@ -514,7 +535,8 @@ window.MOVILIDADES = {
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU023",
@@ -537,7 +559,8 @@ window.MOVILIDADES = {
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU024",
@@ -560,7 +583,8 @@ window.MOVILIDADES = {
 "nota": "Conferencia en simposio sobre teledetección (6 oct–24 nov).",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU025",
@@ -583,7 +607,8 @@ window.MOVILIDADES = {
 "nota": "Rediseño de planes de estudio de hotelería.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU026",
@@ -606,7 +631,8 @@ window.MOVILIDADES = {
 "nota": "Maestría en Ingeniería Química.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU027",
@@ -629,7 +655,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado honoris causa, firma de convenio y conferencia.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU028",
@@ -652,7 +679,8 @@ window.MOVILIDADES = {
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU029",
@@ -675,7 +703,8 @@ window.MOVILIDADES = {
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU030",
@@ -698,7 +727,8 @@ window.MOVILIDADES = {
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU031",
@@ -721,7 +751,8 @@ window.MOVILIDADES = {
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU032",
@@ -744,7 +775,8 @@ window.MOVILIDADES = {
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU033",
@@ -767,7 +799,8 @@ window.MOVILIDADES = {
 "nota": "Instalación de sistemas de registro e inscripción.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU034",
@@ -790,7 +823,8 @@ window.MOVILIDADES = {
 "nota": "Técnicos de informática; número no consta.",
 "discapacidad": null,
 "grupo": true,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU035",
@@ -813,7 +847,8 @@ window.MOVILIDADES = {
 "nota": "Máster en Ciencias de la Salud; renovado en 2024-040.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU036",
@@ -836,7 +871,8 @@ window.MOVILIDADES = {
 "nota": "Agenda del doctorado de doble titulación en Ciencias de la Educación.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU037",
@@ -859,7 +895,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU038",
@@ -882,7 +919,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU039",
@@ -905,7 +943,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU040",
@@ -928,7 +967,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU041",
@@ -951,7 +991,8 @@ window.MOVILIDADES = {
 "nota": "Evento de formación académica del CSUCA.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU042",
@@ -974,7 +1015,8 @@ window.MOVILIDADES = {
 "nota": "Evento de formación académica del CSUCA.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU043",
@@ -997,7 +1039,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU044",
@@ -1020,7 +1063,8 @@ window.MOVILIDADES = {
 "nota": "Estancia para completar la tesis de grado.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU045",
@@ -1043,7 +1087,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU046",
@@ -1066,7 +1111,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU047",
@@ -1089,7 +1135,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU048",
@@ -1112,7 +1159,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU049",
@@ -1135,7 +1183,8 @@ window.MOVILIDADES = {
 "nota": "Viajó con una comisión del Consejo Universitario; número no consta.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU050",
@@ -1158,7 +1207,8 @@ window.MOVILIDADES = {
 "nota": "",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU051",
@@ -1181,7 +1231,8 @@ window.MOVILIDADES = {
 "nota": "Estancia postdoctoral.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU052",
@@ -1204,7 +1255,8 @@ window.MOVILIDADES = {
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU053",
@@ -1227,7 +1279,8 @@ window.MOVILIDADES = {
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU054",
@@ -1250,7 +1303,8 @@ window.MOVILIDADES = {
 "nota": "Maestría en Ciencias de Datos; renovada en 2025-048.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU055",
@@ -1273,7 +1327,8 @@ window.MOVILIDADES = {
 "nota": "Maestría Erasmus Mundus en Astrofísica; renovada en 2025-047.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU056",
@@ -1296,7 +1351,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU057",
@@ -1319,7 +1375,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU058",
@@ -1342,7 +1399,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU059",
@@ -1365,7 +1423,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU060",
@@ -1388,7 +1447,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU061",
@@ -1411,7 +1471,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU062",
@@ -1434,7 +1495,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU063",
@@ -1457,7 +1519,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU064",
@@ -1480,7 +1543,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU065",
@@ -1503,7 +1567,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU066",
@@ -1526,7 +1591,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU067",
@@ -1549,7 +1615,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU068",
@@ -1572,7 +1639,8 @@ window.MOVILIDADES = {
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU069",
@@ -1595,7 +1663,8 @@ window.MOVILIDADES = {
 "nota": "Grupo de estudiantes de Medicina; número no consta.",
 "discapacidad": null,
 "grupo": true,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU070",
@@ -1618,7 +1687,8 @@ window.MOVILIDADES = {
 "nota": "Máster en Ingeniería Avanzada de Producción y Logística.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU071",
@@ -1641,10 +1711,347 @@ window.MOVILIDADES = {
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Consejo Universitario"
+"fuente": "Consejo Universitario",
+"solo_anio": false
 },
 {
 "id": "CU072",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "Por confirmar",
+"sexo": "NO CONSTA",
+"fecha": "2022-01-01",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad Calíope / Erasmus+; carrera, semestre y duración por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": true
+},
+{
+"id": "CU073",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "Por confirmar",
+"sexo": "MASCULINO",
+"fecha": "2022-01-01",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad Calíope / Erasmus+; carrera, semestre y duración por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": true
+},
+{
+"id": "CU074",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "Por confirmar",
+"sexo": "NO CONSTA",
+"fecha": "2022-01-01",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad Calíope / Erasmus+; carrera, semestre y duración por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": true
+},
+{
+"id": "CU075",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "Por confirmar",
+"sexo": "FEMENINO",
+"fecha": "2022-01-01",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad Calíope / Erasmus+; carrera, semestre y duración por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": true
+},
+{
+"id": "CU076",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "Por confirmar",
+"sexo": "FEMENINO",
+"fecha": "2022-01-01",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad Calíope / Erasmus+; carrera, semestre y duración por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": true
+},
+{
+"id": "CU077",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Personal administrativo",
+"facultad": "Vicerrectoría de Investigación y Postgrado",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Formación (movilidad de personal)",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semana",
+"sexo": "FEMENINO",
+"fecha": "2022-03-14",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Formación y trabajo con el equipo del INSA, 14–18 de marzo de 2022.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU078",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Personal administrativo",
+"facultad": "Unidad por confirmar",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Formación (movilidad de personal)",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semana",
+"sexo": "FEMENINO",
+"fecha": "2022-03-14",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad de formación, 14–18 de marzo de 2022.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU079",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Personal administrativo",
+"facultad": "Unidad por confirmar",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Formación (movilidad de personal)",
+"organismo": "Erasmus+ / EMIC (Calíope)",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semana",
+"sexo": "FEMENINO",
+"fecha": "2022-03-14",
+"anio": 2022,
+"periodo": "2022-I",
+"nota": "Movilidad de formación, 14–18 de marzo de 2022.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU080",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ KA171",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semestre",
+"sexo": "FEMENINO",
+"fecha": "2026-01-01",
+"anio": 2026,
+"periodo": "2026-I",
+"nota": "Semestre de primavera 2026 (enero–junio), Química e Ingeniería Química.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU081",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ KA171",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semestre",
+"sexo": "FEMENINO",
+"fecha": "2026-01-01",
+"anio": 2026,
+"periodo": "2026-I",
+"nota": "Semestre de primavera 2026 (enero–junio), Química e Ingeniería Química.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU082",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Estudiante de grado",
+"facultad": "Ingeniería y Arquitectura",
+"pais": "Francia",
+"ciudad": "Rouen",
+"institucion": "INSA Rouen Normandie",
+"dimension": "INTERNACIONAL",
+"razon": "Intercambio académico",
+"organismo": "Erasmus+ KA171",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semestre",
+"sexo": "FEMENINO",
+"fecha": "2026-01-01",
+"anio": 2026,
+"periodo": "2026-I",
+"nota": "Semestre de primavera 2026 (enero–junio), Química e Ingeniería Química.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU083",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Investigador",
+"facultad": "Fit4Digital",
+"pais": "España",
+"ciudad": "Madrid",
+"institucion": "Universidad Carlos III de Madrid",
+"dimension": "INTERNACIONAL",
+"razon": "Reunión de proyecto internacional",
+"organismo": "Erasmus+ CBHE (Fit4Digital)",
+"modalidad": "PRESENCIAL",
+"duracion": "Corta",
+"sexo": "FEMENINO",
+"fecha": "2026-01-15",
+"anio": 2026,
+"periodo": "2026-I",
+"nota": "Reunión de arranque del consorcio Fit4Digital, 15–16 de enero de 2026.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU084",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Investigador",
+"facultad": "HEMISPHERES",
+"pais": "Brasil",
+"ciudad": "Río de Janeiro",
+"institucion": "2.º Foro HEMISPHERES",
+"dimension": "INTERNACIONAL",
+"razon": "Reunión de proyecto internacional",
+"organismo": "Erasmus+ Jean Monnet (HEMISPHERES)",
+"modalidad": "PRESENCIAL",
+"duracion": "Corta",
+"sexo": "FEMENINO",
+"fecha": "2026-06-01",
+"anio": 2026,
+"periodo": "2026-I",
+"nota": "Foro del proyecto, 1–3 de junio de 2026; asistencia por confirmar.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU085",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Investigador",
+"facultad": "Facultad de Artes (RIUDICC)",
+"pais": "España",
+"ciudad": "Madrid",
+"institucion": "Reuniones de trabajo de la red RIUDICC",
+"dimension": "INTERNACIONAL",
+"razon": "Reunión de proyecto internacional",
+"organismo": "Erasmus+ RIUDICC (UE)",
+"modalidad": "PRESENCIAL",
+"duracion": "1 semana",
+"sexo": "FEMENINO",
+"fecha": "2026-07-20",
+"anio": 2026,
+"periodo": "2026-II",
+"nota": "Actividades de la red en Madrid, 20–26 de julio de 2026, con la delegación UASD.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
+},
+{
+"id": "CU086",
 "resolucion": "",
 "sentido": "SALIENTE",
 "perfil": "Investigador",
@@ -1656,15 +2063,16 @@ window.MOVILIDADES = {
 "razon": "Reunión de proyecto internacional",
 "organismo": "Erasmus+ RIUDICC (UE)",
 "modalidad": "PRESENCIAL",
-"duracion": "Corta",
+"duracion": "1 semana",
 "sexo": "FEMENINO",
-"fecha": "2026-10-27",
+"fecha": "2026-10-26",
 "anio": 2026,
 "periodo": "2026-II",
-"nota": "III Encuentro de la red RIUDICC, 27–28 de octubre de 2026.",
+"nota": "III Encuentro de la red, viaje del 26 de octubre al 2 de noviembre de 2026, con la delegación UASD.",
 "discapacidad": null,
 "grupo": false,
-"fuente": "Registro de Relaciones Internacionales"
+"fuente": "Registro de Relaciones Internacionales",
+"solo_anio": false
 }
 ],
 "coords": {
@@ -1723,6 +2131,10 @@ window.MOVILIDADES = {
 "Ecuador": [
 -79.0,
 -2.9
+],
+"Brasil": [
+-43.2,
+-22.9
 ],
 "Nicaragua": [
 -86.25,

@@ -45,7 +45,7 @@
       const top=el("div","proy-top"); top.append(el("span","tag",p.tipo), el("span","proy-est "+(p.estado==="En ejecución"?"on":p.estado==="Propuesta"?"pro":"off"),p.estado), el("span","proy-rol",p.rol==="Coordinador"?"UASD coordina":"UASD participa"));
       const h=el("h3",null,p.titulo);
       const dl=el("dl");
-      [["Programa",p.programa],["Financia",p.financiador],["Unidad UASD",p.unidad],["Socios",p.socios],["Periodo",p.inicio+(p.fin?`–${p.fin}`:" →")],["Presupuesto",p.presupuesto],["Res. CU",p.resolucion]]
+      [["Programa",p.programa],["Financia",p.financiador],["Unidad UASD",p.unidad],["Socios",p.socios],["Periodo",p.inicio+(p.fin?`–${p.fin}`:" →")],["Presupuesto",p.presupuesto],["Res. CU",p.resolucion],["Nota",p.nota]]
         .forEach(([k,v])=>{ if(!v) return; dl.append(el("dt",null,k),el("dd",null,v)); });
       c.append(top,h,dl);
       if(p.enlace){ const a=el("a","more","Sitio del proyecto ↗"); a.href=p.enlace; a.target="_blank"; a.rel="noopener noreferrer"; c.append(a); }
