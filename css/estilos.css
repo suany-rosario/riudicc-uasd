@@ -407,3 +407,11 @@ footer.site .logos{border-radius:16px}
 .grid2.cifras .colx{font-size:11px}
 #cifrasFuente a{color:var(--accent)}
 .grid2.cifras .card{align-content:start}
+
+/* Emblema UE en la cabecera */
+.brand-ue{height:42px;width:auto;display:block;background:#fff;border-radius:6px;padding:3px 6px;flex:none}
+footer.site .logos a{display:block;line-height:0}
+.riu-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.riu-links .btn{text-decoration:none}
+@media (max-width:600px){.brand-ue{height:32px;padding:2px 5px}}
+@media (max-width:420px){.brand-t{display:none}.topbar .in{gap:12px}}
