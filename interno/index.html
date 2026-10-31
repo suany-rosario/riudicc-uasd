@@ -30,6 +30,8 @@ td .chipi.pend{border-color:var(--warn);color:var(--warn)}
 .vacio{border:1.5px dashed var(--line);border-radius:8px;padding:22px;display:grid;gap:8px;background:var(--surface)}
 .vacio h3{font:700 18px var(--f-display);margin:0}
 .vacio p{margin:0;color:var(--muted);max-width:70ch}
+.int .demo b{flex:none}
+.int .grid2 .card{align-content:start}
 </style>
 </head>
 <body>
@@ -103,9 +105,52 @@ td .chipi.pend{border-color:var(--warn);color:var(--warn)}
   </div></section>
 
   <section id="p-mov" role="tabpanel" aria-labelledby="tab-mov" hidden><div class="wrap" style="padding-top:12px">
+    <div class="demo" role="note" style="background:var(--accent-soft)"><b style="color:var(--accent)">Datos reales, alcance parcial.</b><span id="mvAviso"></span></div>
+    <section class="kpis" id="mvKpis"></section>
+    <div class="grid2">
+      <section class="card">
+        <h2>Movilidades por año</h2>
+        <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div>
+        <div class="cols" id="mvAnios" role="img" aria-label="Movilidades por año"></div>
+        <div class="colx" id="mvAniosX"></div>
+        <p class="sub">Personas, según la fecha de inicio de la movilidad.</p>
+      </section>
+      <section class="card">
+        <h2>Países de destino y de origen</h2>
+        <p class="sub">Pulsa un país para filtrar la tabla</p>
+        <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div>
+        <div class="hbars" id="mvPais"></div>
+      </section>
+      <section class="card">
+        <h2>Quiénes se movieron</h2>
+        <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div>
+        <div class="hbars" id="mvPerfil"></div>
+      </section>
+      <section class="card">
+        <h2>Para qué</h2>
+        <div class="hbars" id="mvRazon"></div>
+      </section>
+    </div>
+    <section class="card">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline"><h2>Registro de movilidades</h2><span class="sub" id="mvCount"></span></div>
+      <div class="fbar" aria-label="Filtros de movilidad">
+        <input type="search" id="mvQ" placeholder="Buscar país, institución, motivo o resolución" aria-label="Buscar movilidad">
+        <select id="mvSent" aria-label="Sentido"><option value="">Salientes y entrantes</option><option value="SALIENTE">Salientes</option><option value="ENTRANTE">Entrantes</option></select>
+        <select id="mvPerf" aria-label="Perfil"><option value="">Todos los perfiles</option></select>
+        <select id="mvPaisSel" aria-label="País"><option value="">Todos los países</option></select>
+        <select id="mvAnio" aria-label="Año"><option value="">Todos los años</option></select>
+        <button type="button" class="btn" id="mvReset">Quitar filtros</button>
+        <button type="button" class="btn primary" id="mvCsv">Descargar CSV</button>
+      </div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Inicio</th><th>Sentido</th><th>Perfil</th><th>Unidad</th><th>País</th><th>Institución o evento</th><th>Motivo</th><th>Apoyo</th><th>Res. CU</th></tr></thead>
+        <tbody id="mvBody"></tbody>
+      </table></div>
+      <p class="sub">Fuente: resoluciones del Consejo Universitario 2018–2026. Una fila por persona; sin nombres, matrículas ni códigos. Cuando la resolución aprueba una delegación sin decir cuántas personas viajaron, se cuenta una sola fila y se indica «número no consta». Las licencias de estudio renovadas varios años se cuentan una vez, en su año de inicio.</p>
+    </section>
     <div class="vacio">
-      <h3>Registro de movilidad del equipo</h3>
-      <p>Aquí se verán las movilidades registradas por las oficinas y por el formulario (salientes y entrantes de docentes, investigadores, personal y estudiantes), con su detalle, solo para el equipo autorizado. Se activará cuando el formulario esté conectado a su hoja de respuestas.</p>
+      <h3>Próximo paso: el registro completo</h3>
+      <p>Las movilidades que no pasan por el Consejo (las aprobadas por facultades, oficinas o por la Dirección de Cooperación, y las de estudiantes que viajan con becas externas) se sumarán aquí cuando el formulario de registro esté conectado a su hoja de respuestas.</p>
       <p><a class="btn" href="../formulario.html">Ver el formulario de registro</a></p>
     </div>
   </div></section>
@@ -124,6 +169,8 @@ td .chipi.pend{border-color:var(--warn);color:var(--warn)}
 </footer>
 <div class="tip" id="tip" hidden></div>
 <script src="convenios.js"></script>
+<script src="movilidades.js"></script>
 <script src="panel.js"></script>
+<script src="movilidad.js"></script>
 </body>
 </html>
