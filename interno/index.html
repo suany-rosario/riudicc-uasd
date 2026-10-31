@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel de Relaciones Internacionales · UASD</title>
+<link rel="icon" type="image/png" href="../img/uasd-escudo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../css/estilos.css">
+<style>
+.int-hero{padding-block:36px 8px}
+.int-hero h1{font:800 clamp(28px,4.4vw,40px)/1.05 var(--f-display);margin:8px 0 8px;letter-spacing:-.01em}
+.privado{display:inline-flex;gap:6px;align-items:center;font:600 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--warn);background:var(--warn-soft);padding:4px 10px;border-radius:999px}
+.tabsi{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px}
+.tabsi button{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:600 14px var(--f-body);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tabsi button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.fbar{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.fbar input[type=search]{flex:1 1 260px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:9px 14px}
+.fbar select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:8px 12px;max-width:100%}
+.int .hb{grid-template-columns:minmax(110px,40%) minmax(0,1fr) 40px}
+.int .hb{cursor:pointer}
+.int .hb .name{white-space:normal;line-height:1.25}
+.int .hb:hover .name{color:var(--accent);text-decoration:underline}
+td .chipi{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+td .chipi.int{border-color:var(--s-out);color:var(--s-out)}
+td .chipi.pend{border-color:var(--warn);color:var(--warn)}
+.verif{color:var(--warn);font-size:12px}
+.vacio{border:1.5px dashed var(--line);border-radius:8px;padding:22px;display:grid;gap:8px;background:var(--surface)}
+.vacio h3{font:700 18px var(--f-display);margin:0}
+.vacio p{margin:0;color:var(--muted);max-width:70ch}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="in">
+    <img class="brand-ue" src="../img/ue-cofinanciado-es.png" alt="Cofinanciado por la Unión Europea" width="350" height="85">
+    <a class="brand" href="../index.html" aria-label="RIUDICC · UASD, volver al portal">
+      <picture><source srcset="../img/riudicc-oscuro.png" media="(prefers-color-scheme: dark)"><img class="brand-riu" src="../img/riudicc.png" alt="RIUDICC" width="439" height="96"></picture>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <img class="brand-uasd" src="../img/uasd-escudo.png" alt="Escudo de la UASD" width="98" height="122">
+      <span class="brand-t">UASD</span></a>
+    <nav class="nav" aria-label="Panel"><a href="../index.html">← Portal público</a></nav>
+  </div>
+</header>
+
+<main class="int">
+  <section class="int-hero"><div class="wrap" style="padding-block:0">
+    <span class="privado">Versión piloto · Relaciones Internacionales</span>
+    <h1>Panel de Relaciones Internacionales</h1>
+    <p class="lede" id="intLede"></p>
+    <div class="tabsi" role="tablist" aria-label="Secciones del panel">
+      <button role="tab" id="tab-conv" aria-selected="true" aria-controls="p-conv">Convenios</button>
+      <button role="tab" id="tab-mov" aria-selected="false" aria-controls="p-mov">Registro de movilidad</button>
+    </div>
+  </div></section>
+
+  <section id="p-conv" role="tabpanel" aria-labelledby="tab-conv"><div class="wrap" style="padding-top:12px">
+    <section class="kpis" id="cvKpis"></section>
+    <div class="grid2">
+      <section class="card">
+        <h2>Convenios aprobados por año</h2>
+        <div class="legend"><span><span class="dot out"></span>Internacionales</span><span><span class="dot" style="background:var(--hilo-cian)"></span>Nacionales</span></div>
+        <div class="cols" id="cvAnios" role="img" aria-label="Convenios por año"></div>
+        <div class="colx" id="cvAniosX"></div>
+        <p class="sub">Año de la resolución del Consejo Universitario. 2026 llega hasta la última acta cargada.</p>
+      </section>
+      <section class="card">
+        <h2>Convenios internacionales por país</h2>
+        <p class="sub">Pulsa un país para filtrar la tabla</p>
+        <div class="hbars" id="cvPais"></div>
+      </section>
+      <section class="card">
+        <h2>Por tipo de instrumento</h2>
+        <div class="hbars" id="cvTipo"></div>
+      </section>
+      <section class="card">
+        <h2>Instituciones con más convenios</h2>
+        <p class="sub">Contrapartes que aparecen en dos o más resoluciones</p>
+        <div class="hbars" id="cvTop"></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline"><h2>Todos los convenios</h2><span class="sub" id="cvCount"></span></div>
+      <div class="fbar" aria-label="Filtros">
+        <input type="search" id="fQ" placeholder="Buscar institución, país o número de resolución" aria-label="Buscar">
+        <select id="fAmb" aria-label="Ámbito"><option value="">Nacionales e internacionales</option><option>Internacional</option><option>Nacional</option><option>Por identificar</option></select>
+        <select id="fPais" aria-label="País"><option value="">Todos los países</option></select>
+        <select id="fTipo" aria-label="Tipo"><option value="">Todos los tipos</option></select>
+        <select id="fAnio" aria-label="Año"><option value="">2018–2026</option></select>
+        <button type="button" class="btn" id="fReset">Quitar filtros</button>
+        <button type="button" class="btn primary" id="fCsv">Descargar CSV</button>
+      </div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Resolución</th><th>Fecha</th><th>Institución</th><th>País</th><th>Tipo</th><th>Decisión</th></tr></thead>
+        <tbody id="cvBody"></tbody>
+      </table></div>
+      <div><button type="button" class="btn" id="cvMore" hidden>Mostrar más</button></div>
+      <p class="sub">Fuente: resoluciones del Consejo Universitario 2018–2026, categoría «Convenios y cooperación internacional». Los nombres provienen del OCR de las actas y se revisaron a mano; los marcados en naranja deben cotejarse con el PDF. La resolución no indica la vigencia del convenio: confirmarla con la Dirección General de Cooperación.</p>
+    </section>
+  </div></section>
+
+  <section id="p-mov" role="tabpanel" aria-labelledby="tab-mov" hidden><div class="wrap" style="padding-top:12px">
+    <div class="vacio">
+      <h3>Registro de movilidad del equipo</h3>
+      <p>Aquí se verán las movilidades registradas por las oficinas y por el formulario (salientes y entrantes de docentes, investigadores, personal y estudiantes), con su detalle, solo para el equipo autorizado. Se activará cuando el formulario esté conectado a su hoja de respuestas.</p>
+      <p><a class="btn" href="../formulario.html">Ver el formulario de registro</a></p>
+    </div>
+  </div></section>
+</main>
+
+<footer class="site">
+  <div class="logos" aria-label="Instituciones">
+    <img src="../img/ue-cofinanciado-es.png" alt="Cofinanciado por la Unión Europea" width="350" height="85">
+    <a href="https://riudicc.org/#/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de RIUDICC"><img src="../img/riudicc-completo.png" alt="RIUDICC – Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural" width="640" height="194"></a>
+    <img src="../img/uasd.png" alt="Universidad Autónoma de Santo Domingo" width="321" height="122">
+  </div>
+  <div class="in">
+    <div><b>RIUDICC · UASD</b><p>Panel de Relaciones Internacionales del micro-observatorio de movilidad de la UASD. Versión piloto: más adelante será de acceso restringido para el equipo.</p></div>
+    <div class="eu">Proyecto cofinanciado por el programa Erasmus+ de la Unión Europea (RIUDICC, 101178033). Financiado por la Unión Europea. Las opiniones y puntos de vista expresados solo comprometen a su(s) autor(es) y no reflejan necesariamente los de la Unión Europea o los de la Agencia Ejecutiva Europea de Educación y Cultura (EACEA). Ni la Unión Europea ni la EACEA pueden ser considerados responsables de ellos.</div>
+  </div>
+</footer>
+<div class="tip" id="tip" hidden></div>
+<script src="convenios.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>
