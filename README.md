@@ -14,7 +14,8 @@ copiando la carpeta tal cual.
 
 | Archivo | Qué es |
 | --- | --- |
-| `index.html` | Portada: qué es RIUDICC, la UASD en la red, próximas convocatorias, cómo participar y el **laboratorio** (panorama UNESCO + micro-observatorio UASD). |
+| `index.html` | Portada: qué es RIUDICC, la UASD en la red, próximas convocatorias, cómo participar y el **observatorio** (panorama UNESCO + la UASD en cifras). |
+| `interno/index.html` | **Panel de Relaciones Internacionales** (piloto): convenios, registro de movilidad y proyectos internacionales. No se indexa en buscadores; se protegerá con Cloudflare Access. |
 | `tablon.html` | **Tablón de movilidad**: becas, intercambios, cursos y estancias, con filtros y formulario para proponer ofertas. |
 | `formulario.html` | Formulario anónimo de **registro de movilidad** (alimenta el micro-observatorio). |
 
@@ -28,16 +29,16 @@ css/
   tablon.css             estilos del tablón
 js/
   portal.js              dibuja la portada a partir de data/
-  observatorio.js        gráficos y mapa del micro-observatorio
+  panorama.js            panorama UNESCO de los países de la red
+  cifras.js              sección «La UASD en cifras»
   tablon.js              lista y filtros del tablón, formulario de propuestas
   formulario.js          formulario de registro de movilidad
 data/                    ← lo que se edita para actualizar el contenido
   contenido.js           textos, enlaces, correo, destacados, organismos de becas
   ofertas.js             convocatorias y ofertas del tablón (las actualiza el agente)
   panorama.js            datos UNESCO por país (reales)
-  movilidades-demo.js    registros DEMOSTRATIVOS del micro-observatorio (ficticios)
+  uasd-cifras.js         estadísticas oficiales de la UASD (matrícula, docentes…)
   opciones-formulario.js listas del formulario (Plantilla 13 del MESCyT)
-  mundo.js               fronteras para el mapa (Natural Earth, dominio público)
 img/                     logos (UE, RIUDICC, UASD)
 agente/
   INSTRUCCIONES.md       cómo trabaja el agente de convocatorias y qué fuentes vigila
@@ -49,8 +50,8 @@ agente/
 - **Textos, enlaces, correo y destacados:** `data/contenido.js`.
 - **Convocatorias del tablón:** `data/ofertas.js`. Las vencidas se ocultan solas.
   La portada muestra automáticamente las 5 próximas en cerrar.
-- **Datos del micro-observatorio:** hoy son ficticios (`data/movilidades-demo.js`)
-  y la página lo avisa. Se sustituirán por los registros reales de la UASD.
+- **Registro de movilidad, convenios y proyectos:** en `interno/` (`movilidades.js`, `convenios.js`,
+  `proyectos.js`). El registro de movilidad no se publica en el portal, solo en el panel.
 
 Fechas siempre en formato `AAAA-MM-DD`.
 
@@ -102,5 +103,4 @@ Proyecto cofinanciado por el programa Erasmus+ de la Unión Europea (RIUDICC, 10
 El pie de página incluye el emblema de la UE y el descargo de responsabilidad
 obligatorio; no deben quitarse.
 
-Mapa: fronteras de Datamaps (MIT, © Mark DiMarco), derivadas de Natural Earth.
 Datos de panorama: Instituto de Estadística de la UNESCO (UIS), vía Our World in Data.

@@ -123,7 +123,7 @@
   <section class="band alt" id="observatorio">
     <div class="wrap">
       <div class="shead" style="margin-bottom:6px"><span class="eyebrow">Observatorio</span><h2>Observatorio de movilidad</h2>
-        <p>Primero, el panorama de los países de la red con datos de la UNESCO. Después, la UASD en cifras con sus estadísticas oficiales. Al final, el micro-observatorio de movilidad UASD con datos provisionales.</p>
+        <p>Primero, el panorama de los países de la red con datos de la UNESCO. Después, la UASD en cifras con sus estadísticas oficiales.</p>
         <div class="riu-links"><a class="btn primary" href="https://riudicc.org/#/observatory" target="_blank" rel="noopener noreferrer">Ir al observatorio interuniversitario de RIUDICC ↗</a></div></div>
 
       <section class="sectionhead" id="panorama" aria-labelledby="panoT">
@@ -147,7 +147,7 @@
       <section class="sectionhead" id="cifras" aria-labelledby="cifrasT">
         <span class="real">Datos reales · UASD</span>
         <h2 id="cifrasT">La UASD en cifras</h2>
-        <p class="intro">Las estadísticas oficiales de la UASD dan el contexto del micro-observatorio: cuántos estudiantes y docentes tiene cada facultad (la base para calcular tasas de movilidad) y cuántos estudiantes de otros países cursan aquí sus estudios completos, que es la movilidad entrante de titulación.</p>
+        <p class="intro">Las estadísticas oficiales de la UASD: cuántos estudiantes y docentes tiene cada facultad y cuántos estudiantes de otros países cursan aquí sus estudios completos.</p>
         <p class="lede" id="cifrasLede"></p>
       </section>
       <section class="kpis" id="cifrasKpis"></section>
@@ -180,67 +180,6 @@
         </section>
       </div>
       <p class="sub" id="cifrasFuente"></p>
-
-      <hr class="divider">
-      <section class="sectionhead">
-        <span class="real" style="background:var(--warn-soft);color:var(--warn)">Datos provisionales</span>
-        <h2>Micro-observatorio UASD</h2>
-      </section>
-      <div class="demo" role="note"><b>Datos provisionales.</b><span>Las cifras de este tablero son ilustrativas: muestran cómo funcionará el micro-observatorio y se irán sustituyendo por los registros de la UASD a medida que lleguen del formulario y de las oficinas. Todavía no deben citarse como movilidades reales.</span></div>
-
-      <div class="filters" aria-label="Filtros">
-        <div class="seg" role="group" aria-label="Sentido">
-          <button type="button" data-f="sentido" data-v="" aria-pressed="true">Todas</button>
-          <button type="button" data-f="sentido" data-v="SALIENTE" aria-pressed="false">Salientes</button>
-          <button type="button" data-f="sentido" data-v="ENTRANTE" aria-pressed="false">Entrantes</button>
-        </div>
-        <div class="seg" role="group" aria-label="Dimensión">
-          <button type="button" data-f="dimension" data-v="" aria-pressed="true">Todo</button>
-          <button type="button" data-f="dimension" data-v="INTERNACIONAL" aria-pressed="false">Internacional</button>
-          <button type="button" data-f="dimension" data-v="NACIONAL" aria-pressed="false">Nacional</button>
-        </div>
-        <select id="fPerfil" aria-label="Perfil"><option value="">Todos los perfiles</option></select>
-        <select id="fFac" aria-label="Facultad"><option value="">Todas las facultades</option></select>
-        <select id="fAnio" aria-label="Año"><option value="">2023–2026</option></select>
-        <button type="button" class="btn" id="reset">Quitar filtros</button>
-      </div>
-
-      <section class="kpis" id="kpis" aria-live="polite"></section>
-
-      <section class="card">
-        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline">
-          <h2>Hacia dónde y desde dónde</h2>
-          <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div>
-        </div>
-        <div class="mapgrid">
-          <div id="map" role="img" aria-label="Mapa de movilidades internacionales desde y hacia Santo Domingo"></div>
-          <div class="maplist" id="maplist"></div>
-        </div>
-        <p class="sub" id="mapNote"></p>
-      </section>
-
-      <section class="card">
-        <h2>Movilidades por semestre</h2>
-        <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span><span>2026-II en curso</span></div>
-        <div class="cols" id="cols"></div>
-        <div class="colx" id="colx"></div>
-      </section>
-
-      <div class="grid2">
-        <section class="card"><h2>Para qué se movieron</h2><p class="sub">Razón de la movilidad</p><div class="hbars" id="bRazon"></div></section>
-        <section class="card"><h2>Con qué apoyo</h2><p class="sub">Organismo, programa o convenio</p><div class="hbars" id="bOrg"></div></section>
-        <section class="card"><h2>Por facultad</h2><div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div><div class="hbars" id="bFac"></div></section>
-        <section class="card"><h2>Quiénes se movieron</h2><div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div><div class="hbars" id="bPerfil"></div><p class="sub" id="nacNote"></p></section>
-      </div>
-
-      <section class="card">
-        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline"><h2>Registros</h2><span class="sub" id="tblCount"></span></div>
-        <div class="tablewrap"><table>
-          <thead><tr><th>Inicio</th><th>Sentido</th><th>Perfil</th><th>Facultad</th><th>País</th><th>Institución</th><th>Razón</th><th>Apoyo</th></tr></thead>
-          <tbody id="tbody"></tbody>
-        </table></div>
-        <div><button type="button" class="btn" id="more" hidden>Mostrar más</button></div>
-      </section>
     </div>
   </section>
 </main>
@@ -266,10 +205,8 @@
 <script src="data/contenido.js"></script>
 <script src="data/ofertas.js"></script>
 <script src="data/panorama.js"></script>
-<script src="data/movilidades-demo.js"></script>
-<script src="data/mundo.js"></script>
 <script src="js/portal.js"></script>
-<script src="js/observatorio.js"></script>
+<script src="js/panorama.js"></script>
 <script src="data/uasd-cifras.js"></script>
 <script src="js/cifras.js"></script>
 </body>
