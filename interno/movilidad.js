@@ -20,41 +20,7 @@
   const sx=ALL.filter(r=>r.sexo!=="NO CONSTA"), muj=sx.filter(r=>r.sexo==="FEMENINO").length;
   $("mvAviso").textContent=` ${ALL.length} movilidades de personas (${out.length} salientes y ${inn.length} entrantes) entre ${anios[0]} y ${anios[anios.length-1]}: ${cu} aprobadas en ${res} resoluciones del Consejo Universitario (viajes de autoridades, aportes económicos, licencias de estudio, rotaciones clínicas y profesores invitados)${ri?` y ${ri} aportadas por el equipo de Relaciones Internacionales`:""}. No es todavía el total de la movilidad de la UASD.`;
 
-  // Cifras clave
-  const paises=new Set(ALL.map(r=>r.pais)).size;
-  [[String(ALL.length),"movilidades registradas",`${res} resoluciones del Consejo`],
-   [null,"salientes · entrantes",[out.length,inn.length]],
-   [String(paises),"países",`${byKey(ALL,"pais")[0].k} y ${byKey(ALL,"pais")[1].k} a la cabeza`],
-   [pct(muj,sx.length),"mujeres",`${muj} de ${sx.length} con sexo conocido`]]
-  .forEach(([v,l,s])=>{const d=el("div","kpi");
-    if(Array.isArray(s)){const vv=el("div","v"); const a=el("span"); a.append(el("span","dot out")," "+s[0]); const b=el("span"); b.append(el("span","dot in")," "+s[1]); vv.append(a,"  ",b); d.append(vv,el("div","l",l));}
-    else{d.append(el("div","v",v),el("div","l",l),el("div","s",s));}
-    $("mvKpis").append(d);});
-
-  // Columnas por año
-  (function(){
-    const C=$("mvAnios"), X=$("mvAniosX"); const ys=[]; for(let y=anios[0];y<=anios[anios.length-1];y++) ys.push(y);
-    const data=ys.map(y=>{const rs=ALL.filter(r=>r.anio===y); const o=rs.filter(r=>r.sentido==="SALIENTE").length; return {y,o,i:rs.length-o};});
-    const top=Math.max(1,...data.map(d=>Math.max(d.o,d.i)));
-    data.forEach(d=>{const c=el("div","col"); const pr=el("div","pair"); const a=el("div","b out"); a.style.height=(d.o/top*100)+"%"; const b=el("div","b in"); b.style.height=(d.i/top*100)+"%";
-      pr.append(a,b); c.append(pr); const t=el("div","tot",String(d.o+d.i)); t.style.bottom=(Math.max(d.o,d.i)/top*100)+"%"; t.style.transform="translateY(-4px)"; c.append(t);
-      hover(c,`${d.y}: ${d.o} salientes, ${d.i} entrantes`); C.append(c); X.append(el("span",null,String(d.y)));});
-  })();
-
-  // Barras (con división salientes/entrantes)
-  function barras(id,data,onPick,split){
-    const B=$(id); const top=Math.max(1,...data.map(d=>d.t));
-    data.forEach(d=>{const row=el("div","hb"); row.append(el("span","name",d.k)); const tr=el("div","track");
-      if(split){ if(d.out){const a=el("span","seg1"+(d.in?" join":"")); a.style.width=(d.out/top*100)+"%"; tr.append(a);} if(d.in){const b=el("span","seg2"); b.style.width=(d.in/top*100)+"%"; tr.append(b);} }
-      else { const a=el("span","seg1"); a.style.width=(d.t/top*100)+"%"; a.style.background="var(--accent)"; tr.append(a); }
-      row.append(tr,el("span","val",String(d.t))); hover(row,`${d.k}: ${d.t}`+(split?` (${d.out} salientes, ${d.in} entrantes)`:""));
-      if(onPick){ row.tabIndex=0; row.setAttribute("role","button"); row.addEventListener("click",()=>onPick(d.k)); row.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault(); onPick(d.k);} }); }
-      B.append(row);});
-  }
   const go=()=>{ draw(); $("mvBody").closest(".card").scrollIntoView({behavior:"smooth",block:"start"}); };
-  barras("mvPais",byKey(ALL,"pais"),k=>{F.pais=k; sync(); go();},true);
-  barras("mvPerfil",byKey(ALL,"perfil"),k=>{F.perfil=k; sync(); go();},true);
-  barras("mvRazon",byKey(ALL,"razon"),k=>{F.q=k; sync(); go();},false);
 
   // Tabla y filtros
   const F={q:"",sentido:"",perfil:"",pais:"",anio:""};
