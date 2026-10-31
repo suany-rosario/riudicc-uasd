@@ -45,7 +45,7 @@ function kpis(rows){
 }
 
 function hbars(id,rows,key,max,split){
-  const B=$(id); B.textContent=""; let data=count(rows,key); if(max&&data.length>max){const rest=data.slice(max); data=data.slice(0,max); const o={k:"Otros ("+rest.length+")",out:0,in:0}; rest.forEach(r=>{o.out+=r.out;o.in+=r.in;}); o.t=o.out+o.in; data.push(o);}
+  const B=$(id); B.textContent=""; let data=count(rows,key);
   const top=Math.max(1,...data.map(d=>d.t));
   if(!data.length){B.append(el("p","sub","Sin registros con estos filtros.")); return;}
   data.forEach(d=>{const row=el("div","hb"); row.append(el("span","name",d.k.trim()));
@@ -75,10 +75,10 @@ function mapList(rows){
   const L=$("maplist"); L.textContent="";
   const intl=rows.filter(r=>r.dimension==="INTERNACIONAL"); const data=count(intl,"pais");
   L.append(el("div","sub",intl.length?`${intl.length} internacionales en ${data.length} países`:"Sin movilidades internacionales con estos filtros"));
-  data.slice(0,10).forEach(d=>{const r=el("div","row"); const n=el("span"); n.append(d.k); r.append(n, el("span","n",`${d.out} · ${d.in}`)); L.append(r);});
+  data.forEach(d=>{const r=el("div","row"); const n=el("span"); n.append(d.k); r.append(n, el("span","n",`${d.out} · ${d.in}`)); L.append(r);});
   if(data.length) L.append(el("div","sub","Cifras: salientes · entrantes"));
   const nac=rows.filter(r=>r.dimension==="NACIONAL");
-  $("mapNote").textContent = nac.length ? `Además, ${nac.length} movilidades nacionales con ${new Set(nac.map(r=>r.institucion)).size} instituciones dominicanas (${count(nac,"institucion").slice(0,3).map(d=>d.k).join(", ")}…).` : "";
+  $("mapNote").textContent = nac.length ? `Además, ${nac.length} movilidades nacionales con ${new Set(nac.map(r=>r.institucion)).size} instituciones dominicanas (${count(nac,"institucion").map(d=>d.k).join(", ")}).` : "";
 }
 const SVGNS="http://www.w3.org/2000/svg";
 const svgEl=(t,attrs)=>{const e=document.createElementNS(SVGNS,t); for(const k in attrs) e.setAttribute(k,attrs[k]); return e;};

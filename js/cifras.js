@@ -54,8 +54,7 @@
       hover(row, `${r.k}: ${nf(tot(r))}`+(parts.length>1?" ("+parts.map(p=>`${nf(r[p.key])} ${p.name}`).join(", ")+")":""));
       B.append(row);});
   }
-  const top6=C.nacionalidades2025.slice(0,6), resto=C.nacionalidades2025.slice(6);
-  barras("cNac",[...top6,{k:`Otras ${resto.length} nacionalidades`,n:resto.reduce((s,d)=>s+d.n,0)}],[{key:"n",color:"var(--s-in)"}]);
+  barras("cNac",C.nacionalidades2025,[{key:"n",color:"var(--s-in)"}]);
   barras("cFac",C.facultades2025,[{key:"mujeres",name:"mujeres",color:"var(--t-cian)"},{key:"hombres",name:"hombres",color:"var(--hilo-amarillo)"}]);
   barras("cDoc",C.docentes2025,[{key:"n",color:"var(--accent)"}]);
 

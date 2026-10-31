@@ -43,10 +43,10 @@
       B.append(row);});
   }
   const pickPais=p=>{ F.ambito=""; F.pais=p; sync(); draw(); $("cvBody").closest(".card").scrollIntoView({behavior:"smooth",block:"start"}); };
-  const pais=count(intl,"pais"); const main=pais.filter(d=>d.n>=2), rest=pais.filter(d=>d.n<2);
-  barras("cvPais",[...main,...(rest.length?[{k:`Otros ${rest.length} países`,n:rest.reduce((s,d)=>s+d.n,0)}]:[])],"var(--s-out)",k=>{ if(!/^Otros /.test(k)) pickPais(k); });
+  const pais=count(intl,"pais");
+  barras("cvPais",pais,"var(--s-out)",pickPais);
   barras("cvTipo",count(ALL,"tipo"),"var(--accent)",k=>{ F.tipo=k; sync(); draw(); });
-  const top=count(ALL.filter(r=>!/sigla en el acta|ilegible|verificar/.test(r.contraparte)),"contraparte").filter(d=>d.n>=2).slice(0,10);
+  const top=count(ALL.filter(r=>!/sigla en el acta|ilegible|verificar/.test(r.contraparte)),"contraparte").filter(d=>d.n>=2);
   barras("cvTop",top,"var(--hilo-cian)",k=>{ F.q=k; sync(); draw(); });
 
   // Tabla con filtros
