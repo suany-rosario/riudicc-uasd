@@ -142,7 +142,7 @@ window.OFERTAS=[
   "plazas": "",
   "cubre": "1.500 € para el desplazamiento internacional.",
   "descripcion": "Para profesores, investigadores, gestores y estudiantes de postgrado de instituciones miembro de la AUIP (verificar membresía de la UASD), en movilidades entre América Latina y universidades andaluzas. Estancias de 20 días a 3 meses que inicien entre el 1 de febrero y el 30 de junio de 2027. Cierra el 3 de noviembre de 2026 a las 23:59 (hora de Madrid); confirmado en la página oficial de la UNICEN que reproduce las bases (auip.org no se pudo abrir).",
-  "enlace": "https://exa.unicen.edu.ar/programa-de-becas-de-movilidad-entre-universidades-andaluzas-e-iberoamericanas-2027/",
+  "enlace": "https://auip.org/es/becas-auip/3108-becas-auip340",
   "contacto": "",
   "apoyos_inclusion": false
  },
@@ -162,7 +162,7 @@ window.OFERTAS=[
   "plazas": "",
   "cubre": "Movilidad entre países iberoamericanos: 1.300 € y pasaje gestionado por la AUIP; entre España y Portugal, hasta 700 €. Solo desplazamiento.",
   "descripcion": "Para profesores, investigadores, gestores de postgrado y estudiantes de postgrado de instituciones miembro de la AUIP (origen y destino deben estar al día con sus cuotas; verificar membresía de la UASD). Estancias de 20 días a 3 meses que inicien entre el 1 de febrero y el 30 de junio de 2027, con plan de trabajo acordado con el destino. Primer plazo: 9 de noviembre de 2026 a las 23:59 (hora de Madrid); segundo plazo: 19 de abril de 2027. Fecha confirmada en la página oficial de la Universidad de Valladolid que reproduce las bases (auip.org no se pudo abrir).",
-  "enlace": "https://esduva.uva.es/programa-magallanes-de-movilidad-academica-internacional-entre-todas-las-instituciones-asociadas-a-la-auip-2027-primer-plazo-hasta-el-9-de-noviembre-de-2026-segundo-plazo-hasta-el-19-de-abril-de/",
+  "enlace": "https://auip.org/es/becas-auip/3106-becas-auip339",
   "contacto": "",
   "apoyos_inclusion": false
  },
@@ -182,7 +182,7 @@ window.OFERTAS=[
   "plazas": "",
   "cubre": "Hasta 3.000 €: hasta 1.200 € de viaje internacional y 600 € por cada 30 días de estancia (máximo 90 días).",
   "descripcion": "Para doctores (profesores, investigadores o gestores) de universidades latinoamericanas asociadas a la AUIP (verificar membresía de la UASD), con estancias de 30 días a 6 meses que inicien entre el 1 de febrero y el 30 de noviembre de 2027. Requiere título de doctor, CV de hasta 5 páginas, avales de ambas universidades y plan de actividades. Cierra el 3 de noviembre de 2026 a las 23:59 (hora de Madrid); confirmado en la página oficial de la UNICEN (auip.org no se pudo abrir).",
-  "enlace": "https://exa.unicen.edu.ar/programa-de-becas-de-movilidad-para-estancias-postdoctorales-en-universidades-andaluzas-2027/",
+  "enlace": "https://auip.org/es/becas-auip/3110-becas-auip341",
   "contacto": "",
   "apoyos_inclusion": false
  },
