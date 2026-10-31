@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tablón de movilidad RIUDICC</title>
+<link rel="icon" type="image/png" href="img/uasd-escudo.png">
+<meta name="description" content="Becas, intercambios, estancias y cursos que publican las universidades de la red RIUDICC, revisados por el micro-observatorio UASD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/formulario.css">
+<link rel="stylesheet" href="css/tablon.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="RIUDICC · UASD, volver al portal">
+      <picture><source srcset="img/riudicc-oscuro.png" media="(prefers-color-scheme: dark)"><img class="brand-riu" src="img/riudicc.png" alt="RIUDICC" width="439" height="96"></picture>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <img class="brand-uasd" src="img/uasd-escudo.png" alt="Escudo de la UASD" width="98" height="122">
+      <span class="brand-t">UASD</span></a>
+    <nav class="nav" aria-label="Portal">
+      <a href="index.html" id="volver">← Volver al portal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="fhero">
+    <div class="fwrap tw">
+      <span class="eyebrow">Red RIUDICC · micro-observatorio UASD</span>
+      <h1>Tablón de movilidad</h1>
+      <p class="lede">Becas, intercambios, estancias y cursos para estudiantes, docentes y personal de las universidades de la red. Cada oferta la revisa el micro-observatorio antes de publicarse.</p>
+      <div class="t-acts">
+        <a class="btn primary" href="#proponer" id="irProponer">Proponer una oferta</a>
+        <span class="t-estado" id="tEstado" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="fwrap tw tbody">
+    <div class="t-filtros" aria-label="Filtros">
+      <input type="search" id="tBuscar" placeholder="Buscar por título, universidad, país o área" aria-label="Buscar">
+      <select id="tTipo" aria-label="Tipo"><option value="">Todos los tipos</option></select>
+      <select id="tNivel" aria-label="Nivel"><option value="">Todos los niveles</option></select>
+      <select id="tOrigen" aria-label="Origen"><option value="">Todas las fuentes</option><option value="oferta">Ofertas de la red</option><option value="convocatoria">Convocatorias externas</option></select>
+      <label class="t-check"><input type="checkbox" id="tInc"> Con apoyos de inclusión</label>
+      <label class="t-check"><input type="checkbox" id="tVenc"> Mostrar vencidas</label>
+    </div>
+    <p class="t-cuenta" id="tCuenta" aria-live="polite"></p>
+    <div class="t-lista" id="tLista"></div>
+
+    <section class="t-prop" id="proponer" aria-labelledby="propT">
+      <div class="t-prop-h">
+        <h2 id="propT">Proponer una oferta</h2>
+        <p>Universidades de la red y oficinas de relaciones internacionales: publiquen aquí plazas, cursos, estancias o becas. La oferta se publica cuando el micro-observatorio la revisa, normalmente en pocos días.</p>
+      </div>
+      <div class="preview" id="tPreview" hidden><b>Vista previa.</b> El tablón todavía no está conectado a su hoja de Google: puede llenar el formulario, pero la propuesta no se guarda.</div>
+      <form id="tForm" novalidate>
+        <div class="row2">
+          <div class="q" data-req="titulo"><label class="ql" for="pTitulo">Título de la oferta<span class="req">obligatoria</span></label><input type="text" id="pTitulo" maxlength="160" placeholder="Intercambio semestral en Comunicación"><p class="err" aria-live="polite"></p></div>
+          <div class="q" data-req="entidad"><label class="ql" for="pEntidad">Universidad o entidad<span class="req">obligatoria</span></label><input type="text" id="pEntidad" maxlength="120" placeholder="Universidad del Azuay"><p class="err" aria-live="polite"></p></div>
+        </div>
+        <div class="q" data-req="tipo"><p class="ql" id="q-ptipo">Tipo<span class="req">obligatoria</span></p><div class="opts" role="radiogroup" aria-labelledby="q-ptipo" id="pTipo"></div><p class="err" aria-live="polite"></p></div>
+        <div class="row2">
+          <div class="q"><label class="ql" for="pPais">País<span class="opc">opcional</span></label><input type="text" id="pPais" maxlength="60" placeholder="Ecuador"></div>
+          <div class="q"><label class="ql" for="pArea">Área<span class="opc">opcional</span></label><input type="text" id="pArea" maxlength="80" placeholder="Ciencias sociales, Artes…"></div>
+        </div>
+        <div class="q"><p class="ql" id="q-pnivel">Dirigida a</p><div class="opts" role="radiogroup" aria-labelledby="q-pnivel" id="pNivel"></div></div>
+        <div class="q"><p class="ql" id="q-pmod">Modalidad</p><div class="opts" role="radiogroup" aria-labelledby="q-pmod" id="pModalidad"></div></div>
+        <div class="row2">
+          <div class="q" data-req="fecha"><label class="ql" for="pFecha">Fecha límite<span class="opc">opcional</span></label><input type="date" id="pFecha"><p class="err" aria-live="polite"></p></div>
+          <div class="q"><label class="ql" for="pPlazas">Plazas<span class="opc">opcional</span></label><input type="text" id="pPlazas" inputmode="numeric" maxlength="3" placeholder="10"></div>
+        </div>
+        <div class="q"><label class="ql" for="pCubre">Qué cubre<span class="opc">opcional</span></label><input type="text" id="pCubre" maxlength="160" placeholder="Matrícula y alojamiento"></div>
+        <div class="q"><label class="ql" for="pDesc">Requisitos y descripción<span class="opc">opcional</span></label><textarea id="pDesc" rows="4" maxlength="1200"></textarea></div>
+        <div class="row2">
+          <div class="q" data-req="enlace"><label class="ql" for="pEnlace">Enlace oficial<span class="opc">opcional</span></label><input type="url" id="pEnlace" maxlength="400" placeholder="https://"><p class="err" aria-live="polite"></p></div>
+          <div class="q"><label class="ql" for="pContacto">Contacto<span class="opc">opcional</span></label><input type="text" id="pContacto" maxlength="160" placeholder="Correo o persona responsable"></div>
+        </div>
+        <label class="t-check big"><input type="checkbox" id="pInc"> Incluye apoyos para poblaciones vulnerables (becas complementarias, accesibilidad, acompañamiento)</label>
+        <div class="hp" aria-hidden="true"><label for="pWeb">No llenar</label><input type="text" id="pWeb" tabindex="-1" autocomplete="off"></div>
+        <div class="t-enviar"><button type="submit" class="btn primary" id="pEnviar">Enviar para revisión</button><span class="t-msg" id="pMsg" aria-live="polite"></span></div>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="logos" aria-label="Instituciones">
+    <img src="img/ue-cofinanciado.png" alt="Cofinanciado por la Unión Europea" width="761" height="151">
+    <img src="img/riudicc-completo.png" alt="RIUDICC – Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural" width="640" height="194">
+    <img src="img/uasd.png" alt="Universidad Autónoma de Santo Domingo" width="321" height="122">
+  </div>
+  <div class="in">
+    <div>
+      <b>RIUDICC · UASD</b>
+      <p>Tablón de la red RIUDICC, mantenido por el micro-observatorio de movilidad de la UASD. Verifique siempre plazos y requisitos en el enlace oficial de cada oferta.</p>
+      <p>Dudas: <span data-correo></span></p>
+    </div>
+    <div class="eu">Proyecto cofinanciado por el programa Erasmus+ de la Unión Europea (RIUDICC, 101178033). Financiado por la Unión Europea. Las opiniones y puntos de vista expresados solo comprometen a su(s) autor(es) y no reflejan necesariamente los de la Unión Europea o los de la Agencia Ejecutiva Europea de Educación y Cultura (EACEA). Ni la Unión Europea ni la EACEA pueden ser considerados responsables de ellos.</div>
+  </div>
+</footer>
+
+
+<script src="data/contenido.js"></script>
+<script src="data/ofertas.js"></script>
+<script src="js/tablon.js"></script>
+</body>
+</html>

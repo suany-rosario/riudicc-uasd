@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Registro de movilidad UASD</title>
+<link rel="icon" type="image/png" href="img/uasd-escudo.png">
+<meta name="description" content="Registro de movilidad académica UASD 2023–2026 del micro-observatorio RIUDICC–UASD. Toma unos dos minutos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="RIUDICC · UASD, volver al portal">
+      <picture><source srcset="img/riudicc-oscuro.png" media="(prefers-color-scheme: dark)"><img class="brand-riu" src="img/riudicc.png" alt="RIUDICC" width="439" height="96"></picture>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <img class="brand-uasd" src="img/uasd-escudo.png" alt="Escudo de la UASD" width="98" height="122">
+      <span class="brand-t">UASD</span></a>
+    <nav class="nav" aria-label="Portal">
+      <a href="index.html" id="volver">← Volver al portal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="fhero">
+    <div class="fwrap">
+      <span class="eyebrow">Micro-observatorio de movilidad · RIUDICC–UASD</span>
+      <h1>Registra tu movilidad</h1>
+      <p class="lede">Docentes, investigadores, personal y estudiantes: si viajaste o participaste en una actividad con otra institución desde enero de 2023, regístralo aquí. Toma unos dos minutos.</p>
+      <ul class="meta" aria-label="Sobre este formulario">
+        <li>Unos 2 minutos</li>
+        <li>Sin nombre ni cédula</li>
+        <li>Solo cifras agregadas · Ley 172-13</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="fwrap fbody">
+    <div class="preview" id="preview" hidden><b>Vista previa.</b> Este formulario todavía no está conectado a la hoja de respuestas: puedes recorrerlo y ver qué datos se enviarían, pero no se guardan.</div>
+
+    <ol class="steps" id="steps" aria-label="Pasos del formulario">
+      <li data-s="0"><span class="n">1</span><span class="t">Consentimiento</span></li>
+      <li data-s="1"><span class="n">2</span><span class="t">Tu perfil</span></li>
+      <li data-s="2"><span class="n">3</span><span class="t">Movilidades</span></li>
+      <li data-s="3"><span class="n">4</span><span class="t">Inclusión</span></li>
+      <li data-s="4"><span class="n">5</span><span class="t">Cierre</span></li>
+    </ol>
+    <div class="bar" aria-hidden="true"><span id="barFill"></span></div>
+
+    <form id="f" novalidate>
+      <!-- 1 · Consentimiento -->
+      <fieldset class="step" data-step="0">
+        <legend class="sh">Antes de empezar</legend>
+        <div class="consent">
+          <p>Los datos se usarán solo con fines estadísticos y de investigación del micro-observatorio de movilidad de la UASD y del proyecto RIUDICC (Erasmus+). Se publicarán únicamente de forma agregada, conforme a la Ley 172-13 de protección de datos personales. El formulario no pide nombre ni cédula.</p>
+        </div>
+        <div class="q" data-req="consent">
+          <p class="ql" id="q-consent">¿Aceptas participar?<span class="req">obligatoria</span></p>
+          <div class="opts" role="radiogroup" aria-labelledby="q-consent">
+            <label class="opt"><input type="radio" name="consent" value="si" id="consent-si"><span>Sí, acepto</span></label>
+            <label class="opt"><input type="radio" name="consent" value="no" id="consent-no"><span>No acepto</span></label>
+          </div>
+          <p class="err" aria-live="polite"></p>
+        </div>
+      </fieldset>
+
+      <!-- 2 · Perfil -->
+      <fieldset class="step" data-step="1" hidden>
+        <legend class="sh">Tu perfil</legend>
+        <div class="q" data-req="perfil">
+          <p class="ql" id="q-perfil">¿Cuál es tu perfil en la UASD?<span class="req">obligatoria</span></p>
+          <div class="opts" role="radiogroup" aria-labelledby="q-perfil" id="o-perfil"></div>
+          <p class="err" aria-live="polite"></p>
+        </div>
+        <div class="q" data-req="facultad">
+          <p class="ql" id="q-facultad">Facultad<span class="req">obligatoria</span></p>
+          <div class="opts facs" role="radiogroup" aria-labelledby="q-facultad" id="o-facultad"></div>
+          <p class="err" aria-live="polite"></p>
+        </div>
+        <div class="row2">
+          <div class="q">
+            <label class="ql" for="escuela">Escuela, departamento o programa<span class="opc">opcional</span></label>
+            <input type="text" id="escuela" name="escuela" maxlength="120" autocomplete="off" placeholder="Ej.: Escuela de Artes Plásticas">
+          </div>
+          <div class="q" data-req="recinto">
+            <label class="ql" for="recinto">Recinto, centro o subcentro<span class="req">obligatoria</span></label>
+            <select id="recinto" name="recinto"></select>
+            <p class="err" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="q">
+            <p class="ql" id="q-sexo">Sexo<span class="opc">opcional</span></p>
+            <div class="opts" role="radiogroup" aria-labelledby="q-sexo">
+              <label class="opt"><input type="radio" name="sexo" value="FEMENINO"><span>Femenino</span></label>
+              <label class="opt"><input type="radio" name="sexo" value="MASCULINO"><span>Masculino</span></label>
+              <label class="opt"><input type="radio" name="sexo" value="NO RESPONDE"><span>Prefiero no responder</span></label>
+            </div>
+          </div>
+          <div class="q">
+            <p class="ql" id="q-edad">Edad<span class="opc">opcional</span></p>
+            <div class="opts" role="radiogroup" aria-labelledby="q-edad" id="o-edad"></div>
+          </div>
+        </div>
+        <div class="q big" data-req="hizo">
+          <p class="ql" id="q-hizo">Entre enero de 2023 y hoy, ¿realizaste alguna movilidad académica?<span class="req">obligatoria</span></p>
+          <p class="help">Un viaje o una actividad virtual con otra institución, en la República Dominicana o en el extranjero: congreso, estancia, curso, intercambio, pasantía…</p>
+          <div class="opts" role="radiogroup" aria-labelledby="q-hizo">
+            <label class="opt"><input type="radio" name="hizo" value="si"><span>Sí</span></label>
+            <label class="opt"><input type="radio" name="hizo" value="no"><span>No</span></label>
+          </div>
+          <p class="err" aria-live="polite"></p>
+        </div>
+      </fieldset>
+
+      <!-- 3 · Movilidades -->
+      <fieldset class="step" data-step="2" hidden>
+        <legend class="sh">Tus movilidades</legend>
+        <p class="help">Registra cada viaje o actividad por separado, empezando por la más reciente. Puedes añadir hasta cinco.</p>
+        <div id="movs"></div>
+        <button type="button" class="btn add" id="addMov">+ Añadir otra movilidad</button>
+      </fieldset>
+
+      <!-- 4 · Inclusión -->
+      <fieldset class="step" data-step="3" hidden>
+        <legend class="sh">Inclusión <span class="vol">voluntaria</span></legend>
+        <p class="help">Estas preguntas ayudan a saber si la movilidad llega a todas las personas. Son voluntarias y solo se publican como totales. Son las mismas preguntas que usa el MESCyT.</p>
+        <div class="q">
+          <p class="ql" id="q-dif">¿Tienes dificultad para…?</p>
+          <div class="grid-dif" id="o-dif" role="group" aria-labelledby="q-dif"></div>
+        </div>
+        <div class="q">
+          <p class="ql" id="q-pg">¿Eres la primera persona de tu familia en ir a la universidad?</p>
+          <div class="opts" role="radiogroup" aria-labelledby="q-pg">
+            <label class="opt"><input type="radio" name="primera_gen" value="Sí"><span>Sí</span></label>
+            <label class="opt"><input type="radio" name="primera_gen" value="No"><span>No</span></label>
+            <label class="opt"><input type="radio" name="primera_gen" value="Prefiero no responder"><span>Prefiero no responder</span></label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 5 · Cierre -->
+      <fieldset class="step" data-step="4" hidden>
+        <legend class="sh">Para terminar</legend>
+        <div class="resumen" id="resumen" aria-live="polite"></div>
+        <div class="q">
+          <label class="ql" for="visitantes">¿Tu escuela o programa recibió profesores, investigadores o estudiantes visitantes desde 2023?<span class="opc">opcional</span></label>
+          <p class="help">Indica aproximadamente cuántos y de qué países.</p>
+          <textarea id="visitantes" name="visitantes" rows="3" maxlength="800" placeholder="Ej.: 3 profesores de México y 1 de España en 2024"></textarea>
+        </div>
+        <div class="q" data-req="email">
+          <label class="ql" for="email">Tu correo institucional<span class="opc">opcional</span></label>
+          <p class="help">Solo si quieres recibir la insignia digital «Movilidad UASD 2023–2026» y el boletín de becas. Se guarda aparte de tus respuestas.</p>
+          <input type="email" id="email" name="email" maxlength="120" autocomplete="email" placeholder="nombre@uasd.edu.do">
+          <p class="err" aria-live="polite"></p>
+        </div>
+        <div class="hp" aria-hidden="true"><label for="sitio_web">No llenar</label><input type="text" id="sitio_web" name="sitio_web" tabindex="-1" autocomplete="off"></div>
+      </fieldset>
+
+      <div class="nav-f">
+        <button type="button" class="btn" id="atras" hidden>Atrás</button>
+        <span class="pasotxt" id="pasoTxt">Paso 1 de 5</span>
+        <button type="button" class="btn primary" id="sig">Continuar</button>
+      </div>
+    </form>
+
+    <!-- Fin -->
+    <section class="done" id="done" hidden tabindex="-1" aria-labelledby="doneT">
+      <div class="done-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <h2 id="doneT">¡Gracias por registrar tu movilidad!</h2>
+      <p id="doneTxt">Si conoces colegas que hayan viajado o recibido visitantes, compárteles este formulario.</p>
+      <div class="done-acts">
+        <button type="button" class="btn primary" id="copiar">Copiar enlace del formulario</button>
+        <button type="button" class="btn" id="otra">Registrar otra persona</button>
+        <a class="btn" href="index.html" id="volver2">Volver al portal</a>
+      </div>
+      <p class="copiado" id="copiado" aria-live="polite"></p>
+      <details class="enviado" id="enviadoBox" hidden>
+        <summary>Ver los datos que se enviarían</summary>
+        <div class="tablewrap"><table id="enviadoTbl"></table></div>
+      </details>
+    </section>
+
+    <section class="nohizo" id="noAcepta" hidden tabindex="-1">
+      <h2>Entendido</h2>
+      <p>No se ha guardado nada. Si cambias de opinión, puedes volver a abrir el formulario cuando quieras.</p>
+      <a class="btn" href="index.html">Volver al portal</a>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="logos" aria-label="Instituciones">
+    <img src="img/ue-cofinanciado.png" alt="Cofinanciado por la Unión Europea" width="761" height="151">
+    <img src="img/riudicc-completo.png" alt="RIUDICC – Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural" width="640" height="194">
+    <img src="img/uasd.png" alt="Universidad Autónoma de Santo Domingo" width="321" height="122">
+  </div>
+  <div class="in">
+    <div>
+      <b>RIUDICC · UASD</b>
+      <p>Micro-observatorio de movilidad académica de la Universidad Autónoma de Santo Domingo en la red RIUDICC. Las respuestas se publican solo de forma agregada.</p>
+      <p>Dudas: <span data-correo></span></p>
+    </div>
+    <div class="eu">Proyecto cofinanciado por el programa Erasmus+ de la Unión Europea (RIUDICC, 101178033). Financiado por la Unión Europea. Las opiniones y puntos de vista expresados solo comprometen a su(s) autor(es) y no reflejan necesariamente los de la Unión Europea o los de la Agencia Ejecutiva Europea de Educación y Cultura (EACEA). Ni la Unión Europea ni la EACEA pueden ser considerados responsables de ellos.</div>
+  </div>
+</footer>
+
+<datalist id="paises"></datalist>
+<template id="tplMov">
+  <article class="mov">
+    <header class="mov-h"><h3 class="mov-t">Movilidad 1</h3><button type="button" class="quitar">Quitar</button></header>
+    <div class="q" data-req="razon">
+      <p class="ql">¿Para qué fue? Razón principal<span class="req">obligatoria</span></p>
+      <div class="opts" role="radiogroup" data-o="razon"></div>
+      <p class="err" aria-live="polite"></p>
+    </div>
+    <div class="q" data-req="dimension">
+      <p class="ql">¿Fue nacional o internacional?<span class="req">obligatoria</span></p>
+      <div class="opts" role="radiogroup" data-o="dimension"></div>
+      <p class="err" aria-live="polite"></p>
+    </div>
+    <div class="row2">
+      <div class="q" data-req="pais">
+        <label class="ql" data-for="pais">País<span class="req">obligatoria</span></label>
+        <input type="text" data-f="pais" list="paises" autocomplete="off" placeholder="Escribe y elige de la lista">
+        <p class="err" aria-live="polite"></p>
+      </div>
+      <div class="q" data-req="institucion">
+        <label class="ql" data-for="institucion">Institución anfitriona<span class="req">obligatoria</span></label>
+        <input type="text" data-f="institucion" maxlength="160" autocomplete="off" placeholder="Ej.: Universidad de Salamanca">
+        <p class="err" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="q" data-req="inicio">
+        <label class="ql" data-for="inicio">Mes y año de inicio<span class="req">obligatoria</span></label>
+        <input type="month" data-f="inicio" min="2023-01">
+        <p class="err" aria-live="polite"></p>
+      </div>
+      <div class="q" data-req="modalidad">
+        <p class="ql">Modalidad<span class="req">obligatoria</span></p>
+        <div class="opts" role="radiogroup" data-o="modalidad"></div>
+        <p class="err" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="q" data-req="duracion">
+      <p class="ql">Duración<span class="req">obligatoria</span></p>
+      <div class="opts" role="radiogroup" data-o="duracion"></div>
+      <p class="err" aria-live="polite"></p>
+    </div>
+    <div class="q" data-req="apoyo">
+      <p class="ql">¿Quién la financió o apoyó?<span class="req">obligatoria · puedes marcar varias</span></p>
+      <div class="opts" data-o="apoyo"></div>
+      <p class="err" aria-live="polite"></p>
+    </div>
+    <div class="q">
+      <label class="ql" data-for="convenio">Nombre del convenio o programa, si lo hubo<span class="opc">opcional</span></label>
+      <input type="text" data-f="convenio" maxlength="160" autocomplete="off" placeholder="Ej.: Convenio UASD – Universidad de Granada">
+    </div>
+    <details class="mas">
+      <summary>Obstáculos y resultados <span class="opc">opcional</span></summary>
+      <div class="q">
+        <p class="ql">Principales obstáculos que enfrentaste</p>
+        <div class="opts" data-o="obstaculos"></div>
+      </div>
+      <div class="q">
+        <p class="ql">Resultados de la movilidad</p>
+        <div class="opts" data-o="resultados"></div>
+      </div>
+    </details>
+  </article>
+</template>
+
+<script src="data/contenido.js"></script>
+<script src="data/opciones-formulario.js"></script>
+<script src="js/formulario.js"></script>
+</body>
+</html>

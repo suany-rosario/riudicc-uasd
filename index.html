@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RIUDICC · UASD</title>
+<link rel="icon" type="image/png" href="img/uasd-escudo.png">
+<meta name="description" content="Micro-observatorio de movilidad académica de la UASD en la red RIUDICC (Erasmus+): qué es RIUDICC, convocatorias, panorama de movilidad y observatorio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="#inicio" aria-label="RIUDICC · UASD, inicio">
+      <picture><source srcset="img/riudicc-oscuro.png" media="(prefers-color-scheme: dark)"><img class="brand-riu" src="img/riudicc.png" alt="RIUDICC" width="439" height="96"></picture>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <img class="brand-uasd" src="img/uasd-escudo.png" alt="Escudo de la UASD" width="98" height="122">
+      <span class="brand-t">UASD</span></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#riudicc">Qué es RIUDICC</a>
+      <a href="#uasd">UASD internacional</a>
+      <a href="#convocatorias">Convocatorias</a>
+      <a href="tablon.html">Tablón</a>
+      <a href="#participa">Participa</a>
+      <a href="#observatorio" class="cta">Observatorio</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap"><div class="grid">
+      <div>
+        <div class="eyebrow">Red RIUDICC · Universidad Autónoma de Santo Domingo</div>
+        <h1>Movilidad e internacionalización <em>con datos</em></h1>
+        <p class="lede">Portal del micro-observatorio de movilidad de la UASD en la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural (RIUDICC), proyecto Erasmus+ 2025–2026 (convocatoria 2024).</p>
+        <div class="acts">
+          <a class="btn primary" href="#observatorio">Ver el observatorio</a>
+          <a class="btn" href="#convocatorias">Becas y convocatorias</a>
+        </div>
+      </div>
+      <div class="stats" aria-label="La red en cifras">
+        <div class="stat"><div class="n">10</div><div class="l">universidades socias</div></div>
+        <div class="stat"><div class="n">6</div><div class="l">países de América Latina, el Caribe y Europa</div></div>
+        <div class="stat"><div class="n">7</div><div class="l">paquetes de trabajo</div></div>
+        <div class="stat"><div class="n">2025–26</div><div class="l">Erasmus+ · fortalecimiento de capacidades (convocatoria 2024)</div></div>
+      </div>
+    </div></div>
+    <svg class="nube" aria-hidden="true" viewBox="0 -12 200 76" style="width:200px;top:30px;right:6%"><path d="M30 60a22 22 0 0 1 4-43 30 30 0 0 1 56-6 26 26 0 0 1 44 10 22 22 0 0 1 36 39z"/></svg>
+    <svg class="nube" aria-hidden="true" viewBox="0 -12 200 76" style="width:130px;top:110px;left:-30px;opacity:.5"><path d="M30 60a22 22 0 0 1 4-43 30 30 0 0 1 56-6 26 26 0 0 1 44 10 22 22 0 0 1 36 39z"/></svg>
+    <svg class="mont" aria-hidden="true" viewBox="0 0 1440 110" preserveAspectRatio="none">
+      <path class="m1" d="M0 90 L140 40 L260 78 L420 22 L560 70 L700 30 L860 82 L1010 18 L1160 70 L1300 36 L1440 74 V110 H0Z"/>
+      <path class="m2" d="M0 100 L180 62 L330 92 L520 48 L690 96 L860 58 L1020 98 L1200 54 L1440 92 V110 H0Z"/>
+      <path class="ag" d="M0 106 H1440 V110 H0Z"/>
+    </svg>
+  </section>
+
+  <section class="band" aria-labelledby="destT" style="padding-top:8px">
+    <div class="wrap">
+      <h2 id="destT" class="sr-only">Destacados</h2>
+      <div class="dests" id="destacados"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="riudicc">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Qué es RIUDICC</span><h2>Una red para que la movilidad llegue a más personas</h2></div>
+      <div class="riu">
+        <div class="riu-txt">
+          <p class="uasd-lede" id="riuTexto"></p>
+          <p class="riu-k" id="riuObjT" style="margin:4px 0 -6px"></p>
+          <ul class="riu-hace" id="riuHace"></ul>
+          <p class="sub" id="riuObjF" style="margin:-6px 0 0"></p>
+        </div>
+        <div>
+          <p class="riu-k">Lo logrado hasta ahora</p>
+          <div class="logros" id="logros"></div>
+          <p class="sub" id="logrosNota"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="uasd">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">UASD internacional</span><h2>La UASD en la red</h2></div>
+      <p class="uasd-lede" id="uasdTexto"></p>
+      <div class="oficinas" id="oficinas"></div>
+    </div>
+  </section>
+
+  <section class="band" id="convocatorias">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Convocatorias</span><h2>Becas y oportunidades de movilidad</h2>
+        <p>El agente del micro-observatorio revisa cada semana las fuentes oficiales; cada convocatoria se verifica antes de publicarse.</p></div>
+      <div class="convgrid">
+        <div><div id="convs"></div>
+          <div class="callout"><h3>Tablón de movilidad RIUDICC</h3><p>Intercambios, cursos cortos, estancias y becas que publican las universidades de la red, revisados por el micro-observatorio UASD.</p><a class="more" id="tablonLink" href="#" target="_blank" rel="noopener noreferrer">Abrir el tablón ↗</a></div>
+        </div>
+        <div><h3 class="sub-h" style="margin-top:0">Organismos de becas por país</h3><ul class="orgs" id="organismos"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="participa">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Participa</span><h2>Ayuda a construir el mapa de movilidad de la UASD</h2></div>
+      <div class="participa">
+        <div class="paso"><h3>Registra tu movilidad</h3><p>Docentes, investigadores, personal y estudiantes: si viajaste o participaste en una actividad con otra institución desde 2023, regístralo en dos minutos.</p><a class="btn primary" id="formLink" href="#">Abrir el formulario</a></div>
+        <div class="paso"><h3>Publica una oferta</h3><p>Universidades de la red: publiquen plazas, cursos, estancias o becas en el tablón de movilidad RIUDICC.</p><a class="btn" href="tablon.html#proponer">Proponer una oferta</a></div>
+        <div class="paso"><h3>Escribe al micro-observatorio</h3><p>Para compartir registros de tu facultad o proponer una convocatoria para el portal.</p><span class="mono" style="font:500 14px var(--f-mono)" data-correo></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="observatorio">
+    <div class="wrap">
+      <div class="shead" style="margin-bottom:6px"><span class="eyebrow">Observatorio</span><h2>Observatorio de movilidad</h2>
+        <p>Primero, el panorama de los países de la red con datos de la UNESCO. Debajo, el micro-observatorio UASD con datos provisionales.</p></div>
+
+      <section class="sectionhead" id="panorama" aria-labelledby="panoT">
+        <span class="real">Datos reales · UNESCO</span>
+        <h2 id="panoT">Panorama RIUDICC: movilidad en los países de la red</h2>
+        <p class="intro">Observar la movilidad académica es uno de los compromisos de RIUDICC: su observatorio interuniversitario (paquete de trabajo 7) sigue cuántas personas salen y llegan, hacia dónde y quién se queda fuera. Este panorama es el punto de partida: muestra, con datos oficiales de la UNESCO, cuánto se mueven los estudiantes de cada país de la red. Sobre esa línea de base se leerán después los datos de cada universidad.</p>
+        <p class="lede">Ecuador es el país de la red donde más estudiantes salen a estudiar fuera; México y Guatemala, donde menos. Los socios europeos aparecen como destino: reciben proporcionalmente más estudiantes internacionales que los países latinoamericanos.</p>
+      </section>
+      <section class="card pano">
+        <div class="cmp" id="cmp" role="img" aria-label="Comparación de movilidad saliente y entrante por país"></div>
+        <div style="display:grid;gap:10px;align-content:start">
+          <div class="legend"><span><span class="dot out"></span>Estudiantes que estudian en otro país (% de la matrícula nacional)</span><span><span class="dot in"></span>Estudiantes internacionales recibidos (% de la matrícula)</span></div>
+          <p class="sub">Tasas de movilidad del Instituto de Estadística de la UNESCO (UIS). Saliente: 2023. Entrante: último año disponible (2023 o 2024). Cobertura en las fichas: tasa bruta de matrícula en educación superior.</p>
+          <p class="sub">En República Dominicana, la UNESCO estima unos 5.600 estudiantes cursando estudios superiores en el exterior en 2023.</p>
+          <p class="sub" id="panoSrc">Fuentes: </p>
+        </div>
+      </section>
+      <section class="fichas" id="fichas"></section>
+
+      <hr class="divider">
+      <section class="sectionhead">
+        <span class="real" style="background:var(--warn-soft);color:var(--warn)">Datos provisionales</span>
+        <h2>Micro-observatorio UASD</h2>
+      </section>
+      <div class="demo" role="note"><b>Datos provisionales.</b><span>Las cifras de este tablero son ilustrativas: muestran cómo funcionará el micro-observatorio y se irán sustituyendo por los registros de la UASD a medida que lleguen del formulario y de las oficinas. Todavía no deben citarse como movilidades reales.</span></div>
+
+      <div class="filters" aria-label="Filtros">
+        <div class="seg" role="group" aria-label="Sentido">
+          <button type="button" data-f="sentido" data-v="" aria-pressed="true">Todas</button>
+          <button type="button" data-f="sentido" data-v="SALIENTE" aria-pressed="false">Salientes</button>
+          <button type="button" data-f="sentido" data-v="ENTRANTE" aria-pressed="false">Entrantes</button>
+        </div>
+        <div class="seg" role="group" aria-label="Dimensión">
+          <button type="button" data-f="dimension" data-v="" aria-pressed="true">Todo</button>
+          <button type="button" data-f="dimension" data-v="INTERNACIONAL" aria-pressed="false">Internacional</button>
+          <button type="button" data-f="dimension" data-v="NACIONAL" aria-pressed="false">Nacional</button>
+        </div>
+        <select id="fPerfil" aria-label="Perfil"><option value="">Todos los perfiles</option></select>
+        <select id="fFac" aria-label="Facultad"><option value="">Todas las facultades</option></select>
+        <select id="fAnio" aria-label="Año"><option value="">2023–2026</option></select>
+        <button type="button" class="btn" id="reset">Quitar filtros</button>
+      </div>
+
+      <section class="kpis" id="kpis" aria-live="polite"></section>
+
+      <section class="card">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline">
+          <h2>Hacia dónde y desde dónde</h2>
+          <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div>
+        </div>
+        <div class="mapgrid">
+          <div id="map" role="img" aria-label="Mapa de movilidades internacionales desde y hacia Santo Domingo"></div>
+          <div class="maplist" id="maplist"></div>
+        </div>
+        <p class="sub" id="mapNote"></p>
+      </section>
+
+      <section class="card">
+        <h2>Movilidades por semestre</h2>
+        <div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span><span>2026-II en curso</span></div>
+        <div class="cols" id="cols"></div>
+        <div class="colx" id="colx"></div>
+      </section>
+
+      <div class="grid2">
+        <section class="card"><h2>Para qué se movieron</h2><p class="sub">Razón de la movilidad</p><div class="hbars" id="bRazon"></div></section>
+        <section class="card"><h2>Con qué apoyo</h2><p class="sub">Organismo, programa o convenio</p><div class="hbars" id="bOrg"></div></section>
+        <section class="card"><h2>Por facultad</h2><div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div><div class="hbars" id="bFac"></div></section>
+        <section class="card"><h2>Quiénes se movieron</h2><div class="legend"><span><span class="dot out"></span>Salientes</span><span><span class="dot in"></span>Entrantes</span></div><div class="hbars" id="bPerfil"></div><p class="sub" id="nacNote"></p></section>
+      </div>
+
+      <section class="card">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline"><h2>Registros</h2><span class="sub" id="tblCount"></span></div>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Inicio</th><th>Sentido</th><th>Perfil</th><th>Facultad</th><th>País</th><th>Institución</th><th>Razón</th><th>Apoyo</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table></div>
+        <div><button type="button" class="btn" id="more" hidden>Mostrar más</button></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="logos" aria-label="Instituciones">
+    <img src="img/ue-cofinanciado.png" alt="Cofinanciado por la Unión Europea" width="761" height="151">
+    <img src="img/riudicc-completo.png" alt="RIUDICC – Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural" width="640" height="194">
+    <img src="img/uasd.png" alt="Universidad Autónoma de Santo Domingo" width="321" height="122">
+  </div>
+  <div class="in">
+    <div>
+      <b>RIUDICC · UASD</b>
+      <p>Micro-observatorio de movilidad académica de la Universidad Autónoma de Santo Domingo en la red RIUDICC. Sitio en desarrollo; no es todavía un sitio oficial de la UASD.</p>
+      <p>Contacto: <span data-correo></span> · Actualizado: <span id="actualizado"></span></p>
+    </div>
+    <div class="eu">Proyecto cofinanciado por el programa Erasmus+ de la Unión Europea (RIUDICC, 101178033). Financiado por la Unión Europea. Las opiniones y puntos de vista expresados solo comprometen a su(s) autor(es) y no reflejan necesariamente los de la Unión Europea o los de la Agencia Ejecutiva Europea de Educación y Cultura (EACEA). Ni la Unión Europea ni la EACEA pueden ser considerados responsables de ellos.</div>
+  </div>
+</footer>
+<div class="tip" id="tip" hidden></div>
+
+
+<script src="data/contenido.js"></script>
+<script src="data/ofertas.js"></script>
+<script src="data/panorama.js"></script>
+<script src="data/movilidades-demo.js"></script>
+<script src="data/mundo.js"></script>
+<script src="js/portal.js"></script>
+<script src="js/observatorio.js"></script>
+</body>
+</html>
