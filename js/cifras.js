@@ -18,12 +18,13 @@
 
   // Lede con el hallazgo principal
   const L=$("cifrasLede");
-  if(L) L.textContent=`En ${xu.anio}, solo ${pc(xu.total,ult.total,2)} del estudiantado de grado de la UASD tiene otra nacionalidad (${nf(xu.total)} de ${nf(ult.total)}), frente al ${C.referenciaPaisEntrante.toLocaleString("es-DO")} % de estudiantes internacionales en el conjunto del país según la UNESCO. Casi 9 de cada 10 son de Venezuela o Haití.`;
+  const facs=C.facultades2025.filter(f=>!/Ciclo básico/.test(f.k)), ciclo=C.facultades2025.find(f=>/Ciclo básico/.test(f.k));
+  if(L) L.textContent=`En ${ult.anio}, la UASD tiene ${nf(ult.total)} estudiantes de grado y técnico superior, el ${pc(ult.mujeres,ult.total,0)} mujeres, y ${nf(D)} docentes en ${facs.length} facultades. Ciencias de la Educación, Ciencias de la Salud y Humanidades reúnen a la mayor parte del estudiantado.`;
 
   // Cifras clave
   const K=$("cifrasKpis");
   [[nf(ult.total),`estudiantes de grado y técnico superior (${ult.anio})`,`${pc(ult.mujeres,ult.total,0)} mujeres`],
-   [nf(xu.total),`estudiantes extranjeros (${xu.anio})`,`${xu.paises} nacionalidades · ${pc(xu.total,ult.total,2)} de la matrícula`],
+   [String(facs.length),"facultades",`y el ciclo básico común (${nf(ciclo.mujeres+ciclo.hombres)} estudiantes)`],
    [nf(D),"docentes (primer semestre 2025)",`${nf(Math.round(ult.total/D))} estudiantes por docente`],
    [nf(I.total),"investigadores registrados (2023)",`${nExtInv} de otros países · ${pc(I.mujeres,I.total,0)} mujeres`]]
   .forEach(([v,l,s])=>{const d=el("div","kpi"); d.append(el("div","v",v),el("div","l",l),el("div","s",s)); K.append(d);});
