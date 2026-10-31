@@ -15,9 +15,10 @@
 
   const out=ALL.filter(r=>r.sentido==="SALIENTE"), inn=ALL.filter(r=>r.sentido==="ENTRANTE");
   const anios=[...new Set(ALL.map(r=>r.anio))].sort((a,b)=>a-b);
-  const res=new Set(ALL.map(r=>r.resolucion)).size;
+  const res=new Set(ALL.map(r=>r.resolucion).filter(Boolean)).size;
+  const cu=ALL.filter(r=>r.fuente!=="Registro de Relaciones Internacionales").length, ri=ALL.length-cu;
   const sx=ALL.filter(r=>r.sexo!=="NO CONSTA"), muj=sx.filter(r=>r.sexo==="FEMENINO").length;
-  $("mvAviso").textContent=` ${ALL.length} movilidades de personas (${out.length} salientes y ${inn.length} entrantes) aprobadas en ${res} resoluciones del Consejo Universitario entre ${anios[0]} y ${anios[anios.length-1]}. Solo incluye las que necesitaron aprobación del Consejo: viajes de autoridades, aportes económicos, licencias de estudio, rotaciones clínicas y profesores invitados. No es el total de la movilidad de la UASD.`;
+  $("mvAviso").textContent=` ${ALL.length} movilidades de personas (${out.length} salientes y ${inn.length} entrantes) entre ${anios[0]} y ${anios[anios.length-1]}: ${cu} aprobadas en ${res} resoluciones del Consejo Universitario (viajes de autoridades, aportes económicos, licencias de estudio, rotaciones clínicas y profesores invitados)${ri?` y ${ri} aportadas por el equipo de Relaciones Internacionales`:""}. No es todavía el total de la movilidad de la UASD.`;
 
   // Cifras clave
   const paises=new Set(ALL.map(r=>r.pais)).size;
@@ -71,14 +72,14 @@
       const s=el("td"); s.append(el("span","pill "+(r.sentido==="SALIENTE"?"out":"in"),r.sentido==="SALIENTE"?"Saliente":"Entrante")); tr.append(s);
       tr.append(el("td",null,r.perfil), el("td",null,r.facultad), el("td",null,r.pais+(r.ciudad?` · ${r.ciudad}`:"")));
       const i=el("td"); i.append(el("span",null,r.institucion)); if(r.nota) i.append(el("div","sub",r.nota)); tr.append(i);
-      tr.append(el("td",null,r.razon), el("td",null,r.organismo), el("td","mono",r.resolucion)); T.append(tr);});
+      tr.append(el("td",null,r.razon), el("td",null,r.organismo), el("td","mono",r.resolucion||"Registro RI")); T.append(tr);});
     if(!rows.length){ const tr=el("tr"); const td=el("td",null,"Ninguna movilidad coincide con estos filtros."); td.colSpan=9; tr.append(td); T.append(tr); }
   }
   $("mvQ").addEventListener("input",e=>{F.q=e.target.value; draw();});
   [["mvSent","sentido"],["mvPerf","perfil"],["mvPaisSel","pais"],["mvAnio","anio"]].forEach(([id,k])=>$(id).addEventListener("change",e=>{F[k]=e.target.value; draw();}));
   $("mvReset").addEventListener("click",()=>{ Object.keys(F).forEach(k=>F[k]=""); sync(); draw(); });
   $("mvCsv").addEventListener("click",()=>{
-    const cols=["resolucion","fecha","sentido","perfil","facultad","pais","ciudad","institucion","razon","organismo","duracion","sexo","nota"];
+    const cols=["resolucion","fuente","fecha","sentido","perfil","facultad","pais","ciudad","institucion","razon","organismo","duracion","sexo","nota"];
     const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
     const csv="﻿"+[cols.join(","),...filtered().map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
     const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"})); a.download="movilidades-consejo-uasd.csv"; document.body.append(a); a.click(); a.remove();

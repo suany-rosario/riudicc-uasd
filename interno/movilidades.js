@@ -30,7 +30,8 @@ window.MOVILIDADES = {
 "periodo": "2018-I",
 "nota": "El rector viajó con acompañantes; su número no consta.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU002",
@@ -52,7 +53,8 @@ window.MOVILIDADES = {
 "periodo": "2018-II",
 "nota": "Premio Excelencia Académica Rubén Darío; viajó con una delegación.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU003",
@@ -74,7 +76,8 @@ window.MOVILIDADES = {
 "periodo": "2019-I",
 "nota": "Delegados estudiantiles al Consejo Universitario; número no consta.",
 "discapacidad": null,
-"grupo": true
+"grupo": true,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU004",
@@ -96,7 +99,8 @@ window.MOVILIDADES = {
 "periodo": "2019-II",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU005",
@@ -118,7 +122,8 @@ window.MOVILIDADES = {
 "periodo": "2019-II",
 "nota": "Premio Excelencia Académica Rubén Darío.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU006",
@@ -140,7 +145,8 @@ window.MOVILIDADES = {
 "periodo": "2019-II",
 "nota": "Maestría y doctorado en Química; licencias renovadas en 2021-142, 2022-020, 2023-052, 2023-277 y 2025-046.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU007",
@@ -162,7 +168,8 @@ window.MOVILIDADES = {
 "periodo": "2020-I",
 "nota": "Comisión encabezada por la rectora; aprobada en marzo de 2020, su realización no consta.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU008",
@@ -184,7 +191,8 @@ window.MOVILIDADES = {
 "periodo": "2021-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU009",
@@ -206,7 +214,8 @@ window.MOVILIDADES = {
 "periodo": "2021-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU010",
@@ -228,7 +237,8 @@ window.MOVILIDADES = {
 "periodo": "2021-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU011",
@@ -250,7 +260,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU012",
@@ -272,7 +283,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU013",
@@ -294,7 +306,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Apertura del Diplomado en Política Consular y Relaciones Internacionales.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU014",
@@ -316,7 +329,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU015",
@@ -338,7 +352,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU016",
@@ -360,7 +375,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU017",
@@ -382,7 +398,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Atletas reconocidos por sus resultados (medallas y cuartos de final).",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU018",
@@ -404,7 +421,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Especialización en Justicia Constitucional.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU019",
@@ -426,7 +444,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Reconocimiento y vínculos con universidades; fecha del viaje no consta.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU020",
@@ -448,7 +467,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU021",
@@ -470,7 +490,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU022",
@@ -492,7 +513,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU023",
@@ -514,7 +536,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Decanos de Artes y Humanidades y director de Educación Física; ponencias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU024",
@@ -536,7 +559,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Conferencia en simposio sobre teledetección (6 oct–24 nov).",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU025",
@@ -558,7 +582,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rediseño de planes de estudio de hotelería.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU026",
@@ -580,7 +605,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Maestría en Ingeniería Química.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU027",
@@ -602,7 +628,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Doctorado honoris causa, firma de convenio y conferencia.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU028",
@@ -624,7 +651,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU029",
@@ -646,7 +674,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU030",
@@ -668,7 +697,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU031",
@@ -690,7 +720,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU032",
@@ -712,7 +743,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Rectora, dos vicerrectores y dos decanos.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU033",
@@ -734,7 +766,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Instalación de sistemas de registro e inscripción.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU034",
@@ -756,7 +789,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Técnicos de informática; número no consta.",
 "discapacidad": null,
-"grupo": true
+"grupo": true,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU035",
@@ -778,7 +812,8 @@ window.MOVILIDADES = {
 "periodo": "2021-II",
 "nota": "Máster en Ciencias de la Salud; renovado en 2024-040.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU036",
@@ -800,7 +835,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "Agenda del doctorado de doble titulación en Ciencias de la Educación.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU037",
@@ -822,7 +858,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU038",
@@ -844,7 +881,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU039",
@@ -866,7 +904,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU040",
@@ -888,7 +927,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU041",
@@ -910,7 +950,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "Evento de formación académica del CSUCA.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU042",
@@ -932,7 +973,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "Evento de formación académica del CSUCA.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU043",
@@ -954,7 +996,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU044",
@@ -976,7 +1019,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "Estancia para completar la tesis de grado.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU045",
@@ -998,7 +1042,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU046",
@@ -1020,7 +1065,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU047",
@@ -1042,7 +1088,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU048",
@@ -1064,7 +1111,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU049",
@@ -1086,7 +1134,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "Viajó con una comisión del Consejo Universitario; número no consta.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU050",
@@ -1108,7 +1157,8 @@ window.MOVILIDADES = {
 "periodo": "2022-I",
 "nota": "",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU051",
@@ -1130,7 +1180,8 @@ window.MOVILIDADES = {
 "periodo": "2022-II",
 "nota": "Estancia postdoctoral.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU052",
@@ -1152,7 +1203,8 @@ window.MOVILIDADES = {
 "periodo": "2023-II",
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU053",
@@ -1174,7 +1226,8 @@ window.MOVILIDADES = {
 "periodo": "2023-II",
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU054",
@@ -1196,7 +1249,8 @@ window.MOVILIDADES = {
 "periodo": "2023-II",
 "nota": "Maestría en Ciencias de Datos; renovada en 2025-048.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU055",
@@ -1218,7 +1272,8 @@ window.MOVILIDADES = {
 "periodo": "2023-II",
 "nota": "Maestría Erasmus Mundus en Astrofísica; renovada en 2025-047.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU056",
@@ -1240,7 +1295,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU057",
@@ -1262,7 +1318,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU058",
@@ -1284,7 +1341,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Ciencias Agroalimentarias.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU059",
@@ -1306,7 +1364,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU060",
@@ -1328,7 +1387,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU061",
@@ -1350,7 +1410,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU062",
@@ -1372,7 +1433,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU063",
@@ -1394,7 +1456,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU064",
@@ -1416,7 +1479,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU065",
@@ -1438,7 +1502,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU066",
@@ -1460,7 +1525,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU067",
@@ -1482,7 +1548,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU068",
@@ -1504,7 +1571,8 @@ window.MOVILIDADES = {
 "periodo": "2024-I",
 "nota": "Doctorado en Medio Ambiente y Sostenibilidad.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU069",
@@ -1526,7 +1594,8 @@ window.MOVILIDADES = {
 "periodo": "2024-II",
 "nota": "Grupo de estudiantes de Medicina; número no consta.",
 "discapacidad": null,
-"grupo": true
+"grupo": true,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU070",
@@ -1548,7 +1617,8 @@ window.MOVILIDADES = {
 "periodo": "2024-II",
 "nota": "Máster en Ingeniería Avanzada de Producción y Logística.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
 },
 {
 "id": "CU071",
@@ -1570,7 +1640,31 @@ window.MOVILIDADES = {
 "periodo": "2025-I",
 "nota": "Rotación de Medicina Interna.",
 "discapacidad": null,
-"grupo": false
+"grupo": false,
+"fuente": "Consejo Universitario"
+},
+{
+"id": "CU072",
+"resolucion": "",
+"sentido": "SALIENTE",
+"perfil": "Investigador",
+"facultad": "Facultad de Artes (RIUDICC)",
+"pais": "Ecuador",
+"ciudad": "Cuenca",
+"institucion": "Universidad del Azuay · III Encuentro RIUDICC",
+"dimension": "INTERNACIONAL",
+"razon": "Reunión de proyecto internacional",
+"organismo": "Erasmus+ RIUDICC (UE)",
+"modalidad": "PRESENCIAL",
+"duracion": "Corta",
+"sexo": "FEMENINO",
+"fecha": "2026-10-27",
+"anio": 2026,
+"periodo": "2026-II",
+"nota": "III Encuentro de la red RIUDICC, 27–28 de octubre de 2026.",
+"discapacidad": null,
+"grupo": false,
+"fuente": "Registro de Relaciones Internacionales"
 }
 ],
 "coords": {
@@ -1625,6 +1719,10 @@ window.MOVILIDADES = {
 "Japón": [
 139.69,
 35.68
+],
+"Ecuador": [
+-79.0,
+-2.9
 ],
 "Nicaragua": [
 -86.25,

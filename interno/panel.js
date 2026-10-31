@@ -12,7 +12,7 @@
   const count=(rows,key)=>{const m=new Map(); rows.forEach(r=>m.set(r[key],(m.get(r[key])||0)+1)); return [...m].map(([k,n])=>({k,n})).sort((a,b)=>b.n-a.n||String(a.k).localeCompare(String(b.k),"es"));};
 
   // Pestañas
-  const tabs=[["tab-conv","p-conv"],["tab-mov","p-mov"]];
+  const tabs=[["tab-conv","p-conv"],["tab-mov","p-mov"],["tab-proy","p-proy"]];
   tabs.forEach(([t,p])=>$(t).addEventListener("click",()=>tabs.forEach(([t2,p2])=>{ $(t2).setAttribute("aria-selected",String(t2===t)); $(p2).hidden=(t2!==t); })));
 
   // Resumen
