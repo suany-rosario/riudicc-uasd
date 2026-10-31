@@ -21,9 +21,9 @@ window.DESTACADOS = [
   { etiqueta: "Participa", titulo: "Registro de movilidad UASD 2023–2026",
     texto: "¿Viajaste a un congreso, hiciste una estancia o recibiste visitantes? Regístralo en dos minutos y ayuda a construir el primer mapa de movilidad de la UASD.",
     enlace: "#participa" },
-  { etiqueta: "Datos", titulo: "Ecuador es el país de la red donde más estudiantes salen a estudiar fuera",
-    texto: "3,35 % de su matrícula estudia en otro país, frente a 1,04 % en República Dominicana y 0,74 % en México (UNESCO, 2023).",
-    enlace: "#panorama" },
+  { etiqueta: "Datos", titulo: "Solo 16 de cada 10.000 estudiantes de grado de la UASD son extranjeros",
+    texto: "299 de 190.326 en 2025 (0,16 %), frente al 1,92 % en el conjunto de República Dominicana. Casi 9 de cada 10 vienen de Venezuela o Haití (UASD; UNESCO).",
+    enlace: "#cifras" },
   { etiqueta: "Red", titulo: "Tablón de movilidad RIUDICC",
     texto: "Intercambios, cursos cortos, estancias y becas que publican las universidades de la red, revisados por el micro-observatorio.",
     enlace: "tablon.html" }
