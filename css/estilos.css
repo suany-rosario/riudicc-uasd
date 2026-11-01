@@ -415,3 +415,11 @@ footer.site .logos a{display:block;line-height:0}
 .riu-links .btn{text-decoration:none}
 @media (max-width:600px){.brand-ue{height:32px;padding:2px 5px}}
 @media (max-width:420px){.brand-t{display:none}.topbar .in{gap:12px}}
+
+/* Cómo leer las cifras del panorama */
+.leer{gap:12px}
+.leer h3{font:700 17px var(--f-display);margin:0}
+.leer-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px 20px}
+.leer-g b{font-weight:600;display:flex;align-items:center;gap:2px}
+.leer-g p{margin:4px 0 0;font-size:14.5px;color:var(--muted)}
+.ficha dt small{display:block;font-size:12px;color:var(--faint);line-height:1.3}
