@@ -423,3 +423,34 @@ footer.site .logos a{display:block;line-height:0}
 .leer-g b{font-weight:600;display:flex;align-items:center;gap:2px}
 .leer-g p{margin:4px 0 0;font-size:14.5px;color:var(--muted)}
 .ficha dt small{display:block;font-size:12px;color:var(--faint);line-height:1.3}
+
+/* ===== Franja institucional UASD (encabezado vinculado a uasd.edu.do) ===== */
+.uasd-band{background:#17499e;color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.uasd-band .in{max-width:1120px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:22px}
+.uasd-band .lg{display:flex;align-items:center;color:#fff;text-decoration:none;flex:none}
+.uasd-band .lg img{display:block;width:auto}
+.uasd-band .lg-uasd img{height:50px}
+.uasd-band .lg-riu img{height:34px}
+.uasd-band .lg-ue{gap:9px;font:600 13px/1.2 var(--f-body)}
+.uasd-band .ue-flag{width:75px;height:50px;flex:none;display:block}
+.uasd-band .lg-sep{width:1px;height:38px;background:rgba(255,255,255,.35);flex:none}
+.uasd-band .lg-ue{margin-left:0}
+.uasd-band .ue-flag{box-shadow:0 0 0 2px #fff}
+.uasd-band a.lg:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:4px}
+.brand-txt{align-items:baseline!important;gap:6px!important}
+.brand-txt b{font:800 18px/1 var(--f-display);letter-spacing:.02em;color:var(--ink)}
+.brand-txt span{font:600 12px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+@media (max-width:760px){
+  .uasd-band .in{gap:12px;padding-block:10px;justify-content:space-between}
+  .uasd-band .lg-uasd img{height:36px}
+  .uasd-band .lg-riu img{height:22px}
+  .uasd-band .ue-flag{width:54px;height:36px}
+  .uasd-band .lg-ue{font-size:10.5px;gap:6px}
+  .uasd-band .lg-sep{display:none}
+}
+@media (max-width:400px){
+  .uasd-band .lg-uasd img{height:30px}
+  .uasd-band .lg-riu img{height:18px}
+  .uasd-band .ue-flag{width:45px;height:30px}
+  .uasd-band .lg-ue span{font-size:9.5px}
+}
