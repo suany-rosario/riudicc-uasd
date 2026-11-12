@@ -474,3 +474,18 @@ footer.site .logos a{display:block;line-height:0}
 /* Botón al panel de Relaciones Internacionales */
 .nav a.ri{border:1.5px solid var(--accent);color:var(--accent);margin-left:6px}
 .nav a.ri:hover{background:var(--accent);color:var(--accent-ink)}
+
+/* ===== Pie alineado con el espacio comunitario de RIUDICC (riudicc.github.io) ===== */
+footer.site .eu p{opacity:1;margin:0}
+footer.site .eu p+p{margin-top:8px}
+footer.site .eu a{text-decoration:underline;text-underline-offset:2px}
+footer.site .social{display:flex;gap:8px;list-style:none;margin:14px 0 0;padding:0}
+footer.site .social a{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.35);border-radius:8px;color:#fff}
+footer.site .social a:hover{background:#fff;color:var(--navy)}
+footer.site .social svg{width:16px;height:16px}
+footer.site .social a:focus-visible,footer.site .foot-links a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+footer.site .foot-links{max-width:1120px;margin:26px auto 0;padding:16px 16px 0;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;opacity:.85}
+footer.site .foot-links a{text-decoration:none}
+footer.site .foot-links a:hover{text-decoration:underline}
+footer.site .foot-links span{margin-left:auto}
+@media (max-width:700px){footer.site .foot-links{flex-direction:column}footer.site .foot-links span{margin-left:0}}
