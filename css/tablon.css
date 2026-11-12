@@ -53,3 +53,8 @@
 #tForm input[type=date],#tForm input[type=url]{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;width:100%;min-width:0}
 #tForm input[type=date]:focus,#tForm input[type=url]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
 .q.mal input[type=url],.q.mal input[type=date]{border-color:var(--t-coral)}
+
+/* Ruta: el tablón forma parte de Convocatorias */
+.miga{font:600 13px/1.3 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.miga a{color:var(--accent);text-decoration:none}
+.miga a:hover{text-decoration:underline}
