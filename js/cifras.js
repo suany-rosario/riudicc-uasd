@@ -36,7 +36,7 @@
       pr.append(b); c.append(pr); const t=el("div","tot",label(d)); t.style.bottom=(val(d)/top*100)+"%"; t.style.transform="translateY(-4px)"; c.append(t);
       hover(c,hint(d)); B.append(c); A.append(el("span",null,String(d.anio)));});
   }
-  const miles=n=>(n/1000).toLocaleString("es-DO",{maximumFractionDigits:0})+" mil";
+  const miles=n=>Math.round(n/1000).toLocaleString("es-DO");   // la unidad (miles) se indica en el subtítulo
   columnas("cMat","cMatX",M,d=>d.total,d=>miles(d.total),"var(--accent)",
     d=>`${d.anio}: ${nf(d.total)} estudiantes (${nf(d.mujeres)} mujeres, ${nf(d.hombres)} hombres)`);
   const nota=$("cMatNota");
