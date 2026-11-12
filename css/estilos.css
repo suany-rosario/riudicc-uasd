@@ -470,3 +470,7 @@ footer.site .logos a{display:block;line-height:0}
 .colx .anio .yr{grid-column:1/-1;font-weight:600;color:var(--ink);font-size:14px;padding-top:2px;border-top:1px solid var(--grid);margin-top:4px}
 .colx .anio + .anio{border-left:1px solid var(--grid)}
 @media (max-width:520px){.cols{gap:4px}.colx{gap:4px}.col .tot{font-size:11.5px}.col.curso .tot::after{content:""}.colx .anio .yr{font-size:12.5px}}
+
+/* Botón al panel de Relaciones Internacionales */
+.nav a.ri{border:1.5px solid var(--accent);color:var(--accent);margin-left:6px}
+.nav a.ri:hover{background:var(--accent);color:var(--accent-ink)}
