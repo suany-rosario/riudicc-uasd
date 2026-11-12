@@ -62,7 +62,7 @@
   // Participa
   const Fm=$("formLink");
   if(Fm){ if(S.formularioMovilidad){ Fm.href=S.formularioMovilidad; if(externo(S.formularioMovilidad)){ Fm.target="_blank"; Fm.rel="noopener noreferrer"; } } else { Fm.removeAttribute("href"); Fm.classList.add("disabled"); Fm.textContent="Formulario disponible pronto"; } }
-  document.querySelectorAll("[data-correo]").forEach(n=>{ n.textContent=S.correo||""; });
+  document.querySelectorAll("[data-correo]").forEach(n=>{ if(!S.correo) return; n.textContent=S.correo; if(n.tagName==="A") n.href="mailto:"+S.correo; });
   const U=$("actualizado"); if(U) U.textContent=fecha(S.actualizado);
 
   // Navegación activa (solo enlaces internos de la página)

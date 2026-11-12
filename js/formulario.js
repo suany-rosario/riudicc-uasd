@@ -14,7 +14,7 @@
                set(v){try{localStorage.setItem(BORRADOR,JSON.stringify(v));}catch(e){}},
                del(){try{localStorage.removeItem(BORRADOR);}catch(e){}}};
 
-  document.querySelectorAll("[data-correo]").forEach(n=>{n.textContent=S.correo||"";});
+  document.querySelectorAll("[data-correo]").forEach(n=>{ if(!S.correo) return; n.textContent=S.correo; if(n.tagName==="A") n.href="mailto:"+S.correo; });
   if(!ENDPOINT) $("preview").hidden=false;
 
   /* ---------- Opciones ---------- */

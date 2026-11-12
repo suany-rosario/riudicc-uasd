@@ -13,7 +13,7 @@
   const fecha=s=>{ if(!/^\d{4}-\d{2}-\d{2}$/.test(s||"")) return ""; const [y,m,d]=s.split("-").map(Number); return `${d} ${MESES[m-1]} ${y}`; };
   const dias=s=>Math.round((Date.parse(s+"T12:00:00")-Date.parse(hoyISO+"T12:00:00"))/864e5);
   const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null");}catch(e){return null;}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
-  document.querySelectorAll("[data-correo]").forEach(n=>{n.textContent=S.correo||"";});
+  document.querySelectorAll("[data-correo]").forEach(n=>{ if(!S.correo) return; n.textContent=S.correo; if(n.tagName==="A") n.href="mailto:"+S.correo; });
 
   let ofertas=(window.OFERTAS||[]).slice(), fuente="copia";
   TIPOS.forEach(t=>$("tTipo").add(new Option(t,t)));

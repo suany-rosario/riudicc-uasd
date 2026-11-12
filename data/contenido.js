@@ -6,7 +6,7 @@
    ===================================================================== */
 
 window.SITIO = {
-  correo: "srosario64@uasd.edu.do",
+  correo: "srosario64@uasd.edu.do",       // contacto de RIUDICC en la UASD (pie y avisos). Si cambia, actualizar también interno/index.html
   actualizado: "2026-10-31",
   formularioMovilidad: "formulario.html",   // página del formulario de registro de movilidad
   formularioEndpoint: "",   // URL de la aplicación web de Google Apps Script que guarda el formulario. Vacío = vista previa, no guarda
