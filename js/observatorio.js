@@ -122,7 +122,7 @@ function drawMap(rows){
 
 
 
-const fmt=n=>n.toFixed(2).replace(".",",")+" %";
+const fmt=n=>n.toFixed(2)+" %";   // convención dominicana: punto decimal
 function panorama(){
   const P=window.PANORAMA||[]; const C=$("cmp"); if(!C) return; const top=Math.max(...P.map(p=>Math.max(p.out,p.inn)));
   [["lat","Núcleo latinoamericano"],["eu","Socios europeos (destino)"]].forEach(([g,label])=>{
@@ -138,12 +138,12 @@ function panorama(){
   P.forEach(p=>{const c=el("article","ficha"+(p.g==="eu"?" eu":""));
     c.append(el("h3",null,p.p), el("div","uni","RIUDICC: "+p.u));
     const dl=el("dl");
-    [["Salen a estudiar fuera","de cada 100 universitarios",fmt(p.out),p.oy],["Vienen de otros países","de cada 100 universitarios",fmt(p.inn),p.iy],["Llegan a la universidad","por cada 100 jóvenes de 18 a 23 años",p.ger.toFixed(1).replace(".",","),p.gy]].forEach(([a,s,b,y])=>{const dd=el("dd",null,b); dd.append(el("small",null,String(y))); const dt=el("dt",null,a); dt.append(el("small",null,s)); dl.append(dt,dd);});
+    [["Salen a estudiar fuera","de cada 100 universitarios",fmt(p.out),p.oy],["Vienen de otros países","de cada 100 universitarios",fmt(p.inn),p.iy],["Llegan a la universidad","por cada 100 jóvenes de 18 a 23 años",p.ger.toFixed(1),p.gy]].forEach(([a,s,b,y])=>{const dd=el("dd",null,b); dd.append(el("small",null,String(y))); const dt=el("dt",null,a); dt.append(el("small",null,s)); dl.append(dt,dd);});
     c.append(dl); Fi.append(c);});
   const RD=P.find(p=>p.p==="República Dominicana");
-  if(RD){ const n=v=>String(v).replace(".",",");
+  if(RD){ const n=v=>String(v);
     const set=(id,t)=>{const e=$(id); if(e) e.textContent=t;};
-    set("leerOut",`En República Dominicana, ${n(RD.out)} %: cerca de ${Math.max(1,Math.round(RD.out))} de cada 100 (unos 5.600 estudiantes en ${RD.oy}).`);
+    set("leerOut",`En República Dominicana, ${n(RD.out)} %: cerca de ${Math.max(1,Math.round(RD.out))} de cada 100 (unos 5,600 estudiantes en ${RD.oy}).`);
     set("leerIn",`En República Dominicana, ${n(RD.inn)} %: unos ${Math.round(RD.inn)} de cada 100. España e Italia reciben más del doble.`);
     set("leerGer",`En República Dominicana, ${n(RD.ger)}: casi ${Math.round(RD.ger/10)} de cada 10. Puede pasar de 100 porque también estudian personas mayores.`); }
   const S=$("panoSrc"); if(S) (window.PANORAMA_FUENTES||[]).forEach((f,i)=>{ if(i) S.append(" · "); const a=el("a",null,f.nombre); a.href=f.enlace; a.target="_blank"; a.rel="noopener noreferrer"; S.append(a);});

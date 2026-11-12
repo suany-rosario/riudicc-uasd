@@ -25,6 +25,8 @@ nuevas entradas para el tablón (`data/ofertas.js`).
 - `fecha_limite` es la fecha de cierre oficial (`AAAA-MM-DD`). Si la hora o la zona horaria
   importan, explicarlo en `descripcion` (por ejemplo, "23:59 hora de Chile").
 - `enlace` apunta a la página o PDF oficial, nunca a un blog o agregador.
+- Números con la convención dominicana: **punto para los decimales** (2.64, 1.5) y **coma para
+  los miles** (1,200 €; CLP 600,000). Cambiar el formato si la página oficial usa otro.
 - No agregar datos personales de nadie.
 - No duplicar: comparar con los `id`, títulos y enlaces que ya existen.
 - Opcional: borrar entradas vencidas hace más de 60 días.
