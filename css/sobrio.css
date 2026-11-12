@@ -1,0 +1,53 @@
+/* ===== Línea sobria UASD (boceto) =====
+   Base institucional UASD: azul #17499e, azul oscuro, blanco y grises neutros.
+   RIUDICC queda como firma: sus logos y una línea fina de cuatro colores bajo la barra. */
+:root{
+  --bg:#F4F6F9; --surface:#FFFFFF; --sunk:#ECEFF4; --ink:#1C2740; --muted:#4F5A70; --faint:#858FA3; --line:#D9DEE7; --grid:#E6EAF0;
+  --accent:#17499E; --accent-ink:#FFFFFF; --accent-soft:#E6EDF8; --navy:#12305F;
+  --s-out:#17499E; --s-in:#7D9BD0; --land:#E3E8EF; --land-edge:#FFFFFF;
+  --hilo-verde:#17499E; --hilo-cian:#4F74B3; --hilo-coral:#7D9BD0; --hilo-amarillo:#B4C4E0;
+  --t-verde:#17499E; --t-cian:#2F5BA7; --t-coral:#3D4A66; --t-amarillo:#5A6478;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1522; --surface:#161E2E; --sunk:#1C2638; --ink:#E9EDF4; --muted:#A9B3C4; --faint:#7C879B; --line:#2A3448; --grid:#222C3E;
+  --accent:#8AAEE8; --accent-ink:#0F1522; --accent-soft:#1E2C47; --navy:#0B1220;
+  --s-out:#8AAEE8; --s-in:#4F74B3; --land:#253047; --land-edge:#161E2E;
+  --hilo-verde:#8AAEE8; --hilo-cian:#6F92CE; --hilo-coral:#4F74B3; --hilo-amarillo:#34507F;
+  --t-verde:#8AAEE8; --t-cian:#A9C2EE; --t-coral:#C3CCDA; --t-amarillo:#A9B3C4; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1522; --surface:#161E2E; --sunk:#1C2638; --ink:#E9EDF4; --muted:#A9B3C4; --faint:#7C879B; --line:#2A3448; --grid:#222C3E;
+  --accent:#8AAEE8; --accent-ink:#0F1522; --accent-soft:#1E2C47; --navy:#0B1220;
+  --s-out:#8AAEE8; --s-in:#4F74B3; --land:#253047; --land-edge:#161E2E;
+  --hilo-verde:#8AAEE8; --hilo-cian:#6F92CE; --hilo-coral:#4F74B3; --hilo-amarillo:#34507F;
+  --t-verde:#8AAEE8; --t-cian:#A9C2EE; --t-coral:#C3CCDA; --t-amarillo:#A9B3C4; color-scheme:dark}
+
+/* Portada sin cielo ni montañas */
+.hero{background:var(--surface)!important;padding-block:56px 52px;border-bottom:1px solid var(--line)}
+.hero .mont,.hero .nube{display:none!important}
+.hero h1,.shead h2,.sectionhead h2{font-weight:700;color:var(--ink)!important}
+.hero h1 em{background:none;padding-bottom:0;color:var(--accent)}
+.eyebrow::before{width:24px;height:3px;background:var(--accent)!important;border-radius:2px}
+
+/* Firma RIUDICC: una sola línea fina con sus cuatro colores */
+.topbar::after{height:3px;background:linear-gradient(90deg,#9FC533 0 25%,#6FAFAB 25% 50%,#E86360 50% 75%,#F6C646 75%)!important}
+
+/* Cifras y tarjetas en un solo tono */
+.stats{box-shadow:none;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.stats::before{background:var(--accent)!important;height:3px}
+.stat .n{color:var(--accent)!important;font-weight:700}
+.dests>*,.ideas>*,.participa>*{--c:var(--accent)!important;--ct:var(--accent)!important}
+.dest,.idea,.paso{border-top-width:3px!important}
+.dest,.idea,.paso,.obs,.ficha,.card,.kpi,.socio,.doc{border-radius:10px}
+.dest:hover{box-shadow:0 10px 24px -18px rgba(23,73,158,.5)}
+.kpi{border-left-width:3px}
+.kpis>*{border-left-color:var(--accent)!important}
+.oficinas>*{border-left-color:var(--accent)!important}
+.riu-hace li::before{background:var(--accent)!important}
+.sectionhead .intro{border-left-color:var(--accent)}
+#observatorio{background:var(--bg)!important}
+.btn.primary{box-shadow:none}
+.nav a.cta{background:var(--accent)}
+
+/* Pie institucional */
+footer.site{background:var(--navy)!important;border-top:4px solid #17499E;border-image:none!important}
+.callout{background:var(--accent-soft)!important;border-left-color:var(--accent)!important}
