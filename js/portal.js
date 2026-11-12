@@ -39,7 +39,7 @@
   }
 
   // UASD
-  if(window.UASD){ $("uasdTexto").textContent=UASD.texto; const O=$("oficinas");
+  if(window.UASD && $("uasdTexto") && $("oficinas")){ $("uasdTexto").textContent=UASD.texto; const O=$("oficinas");
     UASD.oficinas.forEach(o=>{const c=el("div","oficina"); const h=el("h3"); if(o.enlace) h.append(link(o.nombre,o.enlace)); else h.textContent=o.nombre; c.append(h, el("p",null,o.rol)); O.append(c);}); }
 
   // Convocatorias: las 5 próximas abiertas
