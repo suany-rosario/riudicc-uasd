@@ -454,3 +454,19 @@ footer.site .logos a{display:block;line-height:0}
   .uasd-band .ue-flag{width:45px;height:30px}
   .uasd-band .lg-ue span{font-size:9.5px}
 }
+
+/* ===== Gráfico de movilidades por semestre: 5 años, barras apiladas, eje por año ===== */
+.cols{height:220px;gap:10px;padding-top:26px;grid-auto-columns:minmax(0,1fr)}
+.col .stack{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.col .stack .b{width:min(34px,70%);border-radius:0}
+.col .stack .b.top{border-radius:4px 4px 0 0}
+.col .tot{font:600 13px var(--f-body);color:var(--ink);transform:translateY(-6px)}
+.col .tot.cero{color:var(--faint);font-weight:400}
+.col.curso .stack .b{background:repeating-linear-gradient(135deg,var(--s-out) 0 4px,color-mix(in srgb,var(--s-out) 45%,var(--surface)) 4px 8px)}
+.col.curso .tot::after{content:" · en curso";font-weight:400;color:var(--muted)}
+.dot.curso{background:repeating-linear-gradient(135deg,var(--s-out) 0 2px,color-mix(in srgb,var(--s-out) 45%,var(--surface)) 2px 4px)}
+.colx{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:10px;font:500 13px var(--f-body);color:var(--muted)}
+.colx .anio{display:grid;grid-template-columns:1fr 1fr;column-gap:10px;text-align:center;padding-top:6px}
+.colx .anio .yr{grid-column:1/-1;font-weight:600;color:var(--ink);font-size:14px;padding-top:2px;border-top:1px solid var(--grid);margin-top:4px}
+.colx .anio + .anio{border-left:1px solid var(--grid)}
+@media (max-width:520px){.cols{gap:4px}.colx{gap:4px}.col .tot{font-size:11.5px}.col.curso .tot::after{content:""}.colx .anio .yr{font-size:12.5px}}

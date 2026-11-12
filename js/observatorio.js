@@ -58,15 +58,22 @@ function hbars(id,rows,key,max,split){
 }
 
 function cols(rows){
+  // Últimos 5 años, semestre a semestre (incluye los semestres sin movilidades), barras apiladas.
   const C=$("cols"), X=$("colx"); C.textContent=""; X.textContent="";
-  const per=[...new Set(DATA.rows.map(r=>r.periodo))].sort((a,b)=>a.localeCompare(b,"es",{numeric:true}));
+  const ANIOS=5, EN_CURSO="2026-II";
+  const ult=Math.max(...DATA.rows.map(r=>Number(String(r.periodo).slice(0,4))));
+  const per=[]; for(let y=ult-ANIOS+1;y<=ult;y++){ per.push(y+"-I", y+"-II"); }
   const data=per.map(p=>{const rs=rows.filter(r=>r.periodo===p); const out=rs.filter(r=>r.sentido==="SALIENTE").length; return {p,out,in:rs.length-out};});
-  const top=Math.max(1,...data.map(d=>Math.max(d.out,d.in)));
-  data.forEach(d=>{const c=el("div","col"+(d.p==="2026-II"?" partial":"")); const pr=el("div","pair");
-    const a=el("div","b out"); a.style.height=(d.out/top*100)+"%"; const b=el("div","b in"); b.style.height=(d.in/top*100)+"%";
-    pr.append(a,b); c.append(pr); const t=el("div","tot",String(d.out+d.in)); t.style.bottom=(Math.max(d.out,d.in)/top*100)+"%"; t.style.transform="translateY(-4px)"; c.append(t);
-    hover(c,`${d.p}: ${d.out} salientes, ${d.in} entrantes${d.p==="2026-II"?" (semestre en curso)":""}`);
-    C.append(c); X.append(el("span",null,d.p));});
+  const top=Math.max(1,...data.map(d=>d.out+d.in));
+  data.forEach(d=>{const cur=d.p===EN_CURSO, tot=d.out+d.in;
+    const c=el("div","col"+(cur?" curso":"")); const st=el("div","stack");
+    const a=el("div","b out"); a.style.height=(d.out/top*100)+"%";
+    const b=el("div","b in"); b.style.height=(d.in/top*100)+"%";
+    (d.in?b:a).classList.add("top"); st.append(b,a); c.append(st);
+    const t=el("div","tot"+(tot?"":" cero"),tot?String(tot):"0"); t.style.bottom=(tot/top*100)+"%"; c.append(t);
+    hover(c,`${d.p}: ${d.out} salientes, ${d.in} entrantes${cur?" (semestre en curso)":""}`);
+    C.append(c);});
+  for(let y=ult-ANIOS+1;y<=ult;y++){ const g=el("div","anio"); g.append(el("span","sem","I"), el("span","sem","II"), el("span","yr",String(y))); X.append(g); }
 }
 
 
