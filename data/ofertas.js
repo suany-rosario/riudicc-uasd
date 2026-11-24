@@ -625,5 +625,25 @@ window.OFERTAS=[
   "enlace": "https://mastergeotech.uji.es/how-to-apply/dates-and-deadlines/",
   "contacto": "",
   "apoyos_inclusion": false
+ },
+ {
+  "id": "japan-foundation-japones-especialistas-kcg-2027",
+  "estado": "Aprobada",
+  "tipo_registro": "convocatoria",
+  "origen": "agente",
+  "titulo": "Japanese-Language Program for Specialists in Cultural and Academic Fields 2027-28 [KC-G 2027]",
+  "entidad": "The Japan Foundation (Japanese-Language Institute, Kansai)",
+  "tipo": "Curso corto",
+  "pais": "Japón",
+  "nivel": "Investigadores",
+  "modalidad": "Presencial",
+  "area": "Humanidades y ciencias sociales relacionadas con Japón",
+  "fecha_limite": "2026-12-01",
+  "plazas": "",
+  "cubre": "Alojamiento individual en el instituto de Kansai, costo del curso, desayuno y almuerzo entre semana, seguro médico y de viaje, y hasta 100,000 yenes para actividades de investigación. El documento no menciona pasaje aéreo ni estipendio mensual.",
+  "descripcion": "Curso intensivo de japonés de seis meses (de octubre de 2027 a marzo de 2028) en Osaka. Para docentes e investigadores universitarios, investigadores de organismos públicos, bibliotecarios, conservadores de museos y estudiantes de maestría o doctorado con tesis sobre Japón. Pide japonés nivel N4 o superior (JLPT) y nacionalidad de un país con relaciones diplomáticas con Japón (incluye a República Dominicana). Se da prioridad a menores de 39 años. Se postula en línea en apply.jpf.go.jp. Cierre: 1 de diciembre de 2026 a las 13:00, hora de Japón (medianoche del 30 de noviembre al 1 de diciembre en RD).",
+  "enlace": "https://www.jpf.go.jp/e/program/dl/japanese/pdf/KC-G2027_e.pdf",
+  "contacto": "jpf-kansai@jpf.go.jp",
+  "apoyos_inclusion": false
  }
 ];
