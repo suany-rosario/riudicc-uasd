@@ -8,10 +8,10 @@ nuevas entradas para el tablón (`data/ofertas.js`).
 1. Revisa las fuentes de la lista de abajo.
 2. Detecta convocatorias **nuevas y abiertas** (que no estén ya en `data/ofertas.js`).
 3. Abre la página o el PDF oficial de cada una y extrae los datos.
-4. Añade las entradas a `data/ofertas.js` en una rama nueva y abre una
-   **solicitud de cambio (pull request)** con la lista de lo que agregó.
-5. **No publica nada directamente.** Una persona del equipo revisa la solicitud
-   y la aprueba (merge). Al aprobarla, Cloudflare Pages publica el sitio actualizado.
+4. Añade las entradas a `data/ofertas.js`, valida el archivo y sube el cambio
+   **directamente a `main`**. Cloudflare Pages publica el sitio en 1–2 minutos.
+5. Envía un correo con la lista de lo publicado. Si algo está mal, se corrige o se
+   deshace después desde GitHub (el historial guarda cada versión).
 
 ## Reglas
 
@@ -66,7 +66,7 @@ Valores permitidos:
 - `apoyos_inclusion`: `true` si ofrece apoyos para poblaciones vulnerables
 
 Lo que va entre `window.OFERTAS=` y el `;` final debe ser **JSON válido**.
-Antes de abrir la solicitud de cambio, ejecutar:
+Antes de subir el cambio a `main`, ejecutar (si no dice «correcto», no se sube):
 
 ```
 python3 agente/validar_ofertas.py
@@ -99,6 +99,6 @@ python3 agente/validar_ofertas.py
 ## Cómo se ejecuta
 
 - **Ahora (prueba):** tarea programada semanal en Claude que sigue estas instrucciones
-  y abre la solicitud de cambio en el repositorio de GitHub.
+  y publica el cambio directamente en `main` del repositorio de GitHub.
 - **Cuando el sitio pase a TI:** GitHub Actions + API de Claude, con estas mismas
   instrucciones, dentro de este repositorio.
